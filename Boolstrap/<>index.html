@@ -31,10 +31,6 @@ id="bootstrap-css">
 
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
-
-/* #Primary
-================================================== */
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -60,7 +56,7 @@ body{
 ================================================== */
 
 .start-header {
-	opacity: 1;
+	opacity: 0.5;
 	transform: translateY(0);
 	padding: 20px 0;
 	box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
@@ -551,7 +547,7 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	transition: all 250ms linear;
 }
 .logo img {
-	height: 26px;
+	height: 40px;
 	width: auto;
 	display: block;
   filter: brightness(10%);
@@ -560,7 +556,250 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 body.dark .logo img {
   filter: brightness(100%);
 }
-</style>
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Faustina|Special+Elite");
+body {
+	font-family: verdana;
+}
+.events {
+	margin: 20px 35%;
+}
+figure {
+	position: relative;
+	background-image: url(/Photos/diego-ph-fIq0tET6llw-unsplash.jpg);
+	background-size: cover;
+	background-position: no-repeat;
+	width: 500px;
+	height: 500px; 
+	box-sizing: border-box;
+	
+	margin: 0 auto;
+	float: left;
+	
+	transition: all 0.35s ease;
+	overflow: hidden;
+	backface-visibility: hidden;
+	box-shadow: 3px 2px 24px 0px rgb(158, 255, 247);
+}
+figure p {
+	width: 320px;
+  
+	background-color: rgba(119, 224, 210, 0.9);
+
+	border-bottom: 5px solid rgba(190, 158, 167, 0.4);
+	font-family: "Special Elite", cursive;
+	padding: 20px;
+	bottom: 0px;
+	position: absolute;
+	transition: all 0.45s ease;
+}
+
+/***/
+
+figure figcaption {
+	transform: translateX(-120%);
+	background-color: rgba(164, 231, 228, 0.9);
+	width: 400px;
+	height: 500px;
+	padding: 20px;
+	position: absolute;
+	top: 0px;
+	bottom: 15px;
+	left: 0px;
+	right: 15px;
+	font-family: "Faustina", serif;
+	font-size: 15px;
+	border: 15px solid rgba(6, 194, 241, 0.4);
+	transition: all 1.5s ease;
+}
+
+figure:hover figcaption {
+	transition: all 1s ease;
+	transform: translate(0, 0);
+}
+figure:hover p {
+	transform: translateX(-120%);
+}
+
+figure .author {
+	text-align: right;
+	margin-top: 25px;
+}
+
+h2 {
+	text-align: center;
+	background: rgba(190, 158, 167, 0.5);
+	border-bottom: 5px solid rgba(190, 158, 167, 0.9);
+	color: #333;
+	font-size: 13px;
+	font-family: "Special Elite", cursive;
+	padding: 20px;
+	width: 250px;
+	margin: auto;
+	margin-top: 40px;
+	transition: all ease 1s;
+}
+h2:hover {
+	background: rgba(157, 236, 241, 0.7);
+	border-bottom: 5px solid rgba(10, 187, 231, 0.8);
+}
+
+
+
+/* body {
+        height: 100vh;
+        background: #0f2027;
+        background: linear-gradient(120deg, #2c5364, #203a43 100%);
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        font-family: 'Jua', sans-serif;
+    } */
+
+    /* .hover_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    } */
+	.hover_wrap {
+        display: flex;
+        background-image: url(/Photos/andrew-neel-cckf4TsHAuw-unsplash.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	    background-position: fixed;
+        
+    } 
+
+    .hover_wrap figure {
+        width: 400px;
+		height: 300px;
+        margin: 10px;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        background: #fff;
+        border-radius: 4px;
+    }
+
+    .hover_wrap figure img {
+        width: 100%;
+        display: block;
+        transition: all .3s ease;
+        border-radius: 0px;
+    }
+
+    .hover_wrap figure figcaption {
+        position: absolute;
+        left: 50%; top: 50%;
+        /*
+        left: 0; top: 0; right: 0; bottom: 0;
+        margin: auto;
+        */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        transition: all .3s ease;
+        background: rgb(17, 195, 240);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .hover_wrap figure figcaption strong {
+        color: #fff;
+        z-index: 20;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+
+    .hover_wrap figure:hover img {
+        opacity: 0.1;
+    }
+
+    .hover_wrap figure.hover1 figcaption{transform: translate(150%, -50%) rotate(360deg)}
+    .hover_wrap figure.hover2 figcaption{transform: translate(-250%, -50%) rotate(-360deg)}
+    .hover_wrap figure:hover figcaption{transform: translate(-50%, -50%)}
+    /*
+    .hover_wrap figure.hover1 figcaption{transform: translateX(80%) rotate(360deg)}
+    .hover_wrap figure.hover2 figcaption{transform: translateX(-80%) rotate(-360deg)}
+    .hover_wrap figure:hover figcaption{transform: translateX(0)}
+    */
+    @media(max-width:800px) {
+        .hover_wrap {
+            flex-direction: column;
+        }
+    }
+
+
+
+
+	* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 400px;
+  display: none;
+}
+
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+	</style>
+
 </head>
 <body>
 	<body class="hero-anime">	
@@ -653,12 +892,157 @@ body.dark .logo img {
 	
 	</body>
 </header>
-  
+
+
+
+
+
+
+
+  <div class="row">
+  <div class="events">
+	
+    <figure>
+      <p>IPL Auction 2019</p>
+      <figcaption>
+        Welcome to the thrill of a live IPL auction! Have you ever wondered what would you do if you get a chance to build in the shoes of a bidder and build your dream IPL team in the shoes of a bidder and build your dream IPL team love cricket and if you have followed IPL, this event is a must for you.<br>  Rules:<br>1)Each team can have a maximum of 5 members<br>2) No member can be a part of more than one team.Violation of this rule will lead to disqualification of both the teams<br>3) All the members should be present during both the rounds of the competition. <br> The decision of the judges will be final in case of any discrepancy.
+        <br>
+        </figcaption>
+    </figure>
+   </div>
+
+  <div class="events">
+    <figure>
+      <p>E-cells meetup 2020</p>
+      <figcaption>
+        E-Cells meetup 2020 is introduced in the form of disscussion session cum competition to make it more exciting.All the E-Cells present will be given an oportunity to showcase their E-Cell's working,culture, and contribution in building a motivated environment for young lads to think beyond the conventional career prospects solve amore significant problem of society through innovation and technology.<br> "Fantastically organised, filled with energy and passion, had an amazing time, Great work by IIT Indore to take the initiative of connecting all the universities entrepreneurial spirits tougher thought this energy powerhouse. Was totally a delight to judge the event. Amazing stuff happening!! Cheers"<br>
+        <br>
+        <div class="author">-Kunal Chandramani</div>
+      </figcaption>
+    </figure>
+</div>
+
+	<div class="events">
+		<figure>
+		  <p>Biz Quiz 2019</p>
+		  <figcaption>
+			Entrepreneurship Cell, IIT Indore brings you Biz Qiz an online business quiz in association with Dare2Compete.<br>1)This quiz is open to all. <br>2) Each team can have 2 participants. A person cannot be a part of more than one team<br>3) All quizzes under Online Quizzing Festival Season 4 will be of 25 minutes and will cover questions from various domains<br>4) All decisions in matter of eligibility, authenticity & final judgement will be with Dare2Compete<br>5) Only one team per college will be awarded top 3 ranks for any quiz under Online Quizzing Festival Season 4<br> A team can only be part of the top 3 ranks in maximum 10 quizzes during Online Quizzing Festival Season 4. This is to ensure that we give chance to every team to win prizes.		 
+			<br>
+			</figcaption>
+		</figure>
+     </div>
+
+	 <div class="events">
+		<figure>
+		  <p>Crazy Ideas 2019</p>
+		  <figcaption>
+			In this world and age, innovation is the name of the game. Ideas are everywhere yet few of them ever take shape and become something more. “Crazy Ideas” is an up and coming national event organized by the E-Cell IIT Indore, in an effort to promote both creative thinking and strategic planning from an early age. Targeted at high school students, we hope to bring out the entrepreneur in you and help you think how you could implement that in real life and monetize it – if only hypothetically. Your job is to come up with the craziest idea you can think of – it doesn’t have to be something that’s needed in today’s world, just something you feel makes this world crazier than it already is and could be somehow, if not now, in near future, be viable enough for implementation.<br>Rules:<br> The startup would be evaluated on 100 Mark , 90 Being in the hands of the professor. 10 Being based on the social influence of the person. As the entrepreneur need all-rounder skills. If Plagiarism is found , the participant would we straight away disqualified.
+			The Registrations would begin from 5 February 2019 and will open till 16 February 23:59:59. The registration would also include the ideas at the same time.
+			<br>
+			</figcaption>
+		</figure>
+     </div>
+
+	 
+			
+	 <div class="events">
+			<figure>
+			<p>Samsung Innovation award 2019</p>
+			 <figcaption>
+			Samsung Innovation Award is organized annually by Samsung R&D Institute India – Bangalore. The event aims to identify , encourage and reward innovative ides and projects developed by student faculty teams at premier Institutes. This year Entrepreneurship Cell, IIT Indore organized Samsung Innovation Award 2019 in IIT Indore.
+				<br>
+			</figcaption>
+			</figure>
+			 </div>
+			<br>
+			</figcaption>
+			</figure>
+			 </div>
+
+			 
+		</div>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+<div class="hover_wrap">
+	<div class="row">
+        <figure class="hover1">
+            <img src="/Photos/pexels-miguel-á-padriñán-3785932.jpg" alt="" width="400" height="300">
+			<p>recources</p>
+            <figcaption><strong>Resources>></strong></figcaption>
+        </figure>
+
+        <figure class="hover2">
+            <img src="/Photos/pexels-helena-lopes-697243.jpg" alt="" width="400" height="300">
+			<p>Meet our team</p>
+            <figcaption><strong>Meet our team>></strong></figcaption>
+        </figure>
+    
+		<figure class="hover1">
+            <img src="/Photos/pexels-miguel-á-padriñán-3785932.jpg" alt="" width="400" height="300">
+            <figcaption><strong>mouse hover</strong></figcaption>
+        </figure>
+
+        <figure class="hover2">
+            <img src="/Photos/rohan-makhecha-jw3GOzxiSkw-unsplash.jpg" alt="" width="400" height="300">
+            <figcaption><strong>mouse hover</strong></figcaption>
+        </figure>
+
+		<figure class="hover1">
+            <img src="/Photos/rohan-makhecha-jw3GOzxiSkw-unsplash.jpg" alt="" width="400" height="300">
+            <figcaption><strong>mouse hover</strong></figcaption>
+        </figure>
+	</div>
+    </div>
+
+
+
+	<div class="tab">
+		<button class="tablinks" onmouseover="openCity(event, 'E-Summit')">E-Summit</button>
+		<button class="tablinks" onmouseover="openCity(event, 'Lecture Series')">Lecture Series</button>
+		<button class="tablinks" onmouseover="openCity(event, 'Engendea')">Engendea</button>
+		<button class="tablinks" onmouseover="openCity(event, 'Workshops')">Workshops</button>
+		<button class="tablinks" onmouseover="openCity(event, 'Entrepreneurship Awareness Camp')">Entrepreneurship Awareness Camp</button>
+	  </div>
+	  
+	  <div id="E-Summit" class="tabcontent">
+		<h3>E-Summit</h3>
+		<p>E-Summit is the flagship event conducted by E-Cell, IIT Indore. It’s a conclave of competitions, workshops, panel discussions and speeches from the biggest names in the world of business.</p>
+		<img src="http://ecell.iiti.ac.in/2.JPG" width="300" height="300" alt="">
+	  </div>
+	  
+	  <div id="Lecture Series" class="tabcontent">
+		<h3>Lecture Series</h3>
+		<p>PDiscover, learn, develop skills that every entrepreneur requires in his journey. A chance to learn from the best experts of the country.</p> 
+		<img src="http://ecell.iiti.ac.in/31.jpg" width="300" height="300" alt="">
+	</div>
+	  
+	  <div id="Engendea" class="tabcontent">
+		<h3>Engendea</h3>
+		<p>A day long event where teams have to pitch an idea and develop a business model for the same. Exciting prices always await at the other end.</p>
+		<img src="http://ecell.iiti.ac.in/ENGEN-01.jpg" width="300" height="300" alt="">
+	</div>
+
+	  <div id="Workshops" class="tabcontent">
+		<h3>Workshops</h3>
+		<p>An interactive training session offering innovative delivering models where participants gain hands on experience to establish vibrant communities.</p>
+		<img src="http://ecell.iiti.ac.in/gl-01.jpg" width="300" height="300" alt="">
+	</div>
+
+	  <div id="Entrepreneurship Awareness Camp" class="tabcontent">
+		<h3>Entrepreneurship Awareness Camp
+		</h3>
+		<p>EAC was conducted by E-Cell, IIT Indore to spread the entrepreneurial awareness among the students.</p>
+		<img src="http://ecell.iiti.ac.in/e21-01.jpg" width="300" height="300" alt="">
+	</div>
+	  
+	  <div class="clearfix"></div>
+
 
   
-
-  <script>
-   (function($) { "use strict";
+<script>
+(function($) { "use strict";
 
 $(function() {
 	var header = $(".start-style");
@@ -704,13 +1088,21 @@ $("#switch").on('click', function () {
 });  
 
 })(jQuery); 
+
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
