@@ -143,6 +143,9 @@ wow.init();
 									<li class="nav-item pl-4 pl-md-0 ms-0 ms-md-4">
 										<a class="nav-link" href="#">Contact</a>
 									</li>
+									<li class="nav-item pl-4 pl-md-0 ms-0 ms-md-4">
+										<a class="nav-link" href="#IITI">Explore</a>
+									</li>
 								</ul>
 							</div>
 
@@ -151,6 +154,32 @@ wow.init();
 				</div>
 			</div>
 		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">⏏︎</button>
+     <script>
+		 //Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 800px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+	 </script>
+
+
 		<div class="section full-height">
 			<video class="videoback" autoplay muted loop>
 				<source src="logo.mp4" type="video/mp4">
@@ -158,13 +187,21 @@ wow.init();
 			<div class="absolute-center">
 				<div class="section">
 					<div class="container">
+						<div class="icon-bar">
+							<a class="active" href="#"><i class="fas fa-google"></i></a> 
+							<a href="#"><i class="fa fa-instagram"></i></a> 
+							<a href="#"><i class="fa fa-facebook"></i></a> 
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a> 
+						  </div>
 						<div class="row">
 							<div class="col-12">
-								<h1><span>E</span><span>n</span><span>t</span><span>r</span><span>e</span><span>p</span><span>r</span><span>e</span><span>n</span><span>e</span><span>u</span><span>r</span>
-									<span>C</span><span>e</span><span>l</span><span>l</span><br>
+								<h1><span>E</span><span>n</span><span>t</span><span>r</span><span>e</span><span>p</span><span>r</span><span>e</span><span>n</span><span>e</span><span>u</span><span>r</span><span>s</span><span>h</span><span>i</span><span>p</span>				<span>C</span><span>e</span><span>l</span><span>l</span><br>
 									<span>I</span><span>I</span><span>T</span><span>I</span>
 								</h1>
-								<p>Bonjour</p>
+								<p><button class="button"><span>Explore</span></button> </p>
+								
+
 							</div>
 						</div>
 					</div>
@@ -197,9 +234,28 @@ wow.init();
 	
 <div  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">   
 <div class="Quote1">
-	CSS gradient  example
+	<div class="qo">
+	<p>"Entrepreneurs are risk takers, willing to roll the dice with their money or reputation on the line in support of an idea or enterprise. They willingly assume responsibility for the success or failure of a venture and are answerable for all its facets."</p>
+</div>
   </div>
   </div>
+
+  <section id="about" class="about-section text-center">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-8 mx-auto">
+		  <h1 class="aboutheading">E-Cell IIT Indore </h1>
+		  <p class="aboutustext">Entrepreneurship Cell at IIT Indore believes that entrepreneurship is
+			not just about starting companies, but a pathway towards India’s socio-economic development. Our vision is to make students and
+			faculty ‘entrepreneurial’ in every work that they do. We hope to enable them to solve global challenges as we see students as the
+			greatest capital and intend to nurture them, provide them with opportunities for excellence.</p>
+		  
+		  <h1 class="aboutheading">Vision</h1>
+		  <p class="aboutustext">E-Cell aims to unlock students’ latent inventive potential. Not only do we show you the doors of opportunity but we also equip you to walk through it. Through our conference, social events, lectures, speaker engagements and workshops, we're hoping to bring together everyone interested in the startup world and to help students best utilize resources to found or join startups..</p>
+
+		</div>
+	  
+  </section>
   <div  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> 
   <div class="container mt-100">
     <div class="row">
@@ -390,6 +446,12 @@ wow.init();
 		</figcaption>
 		</figure>
 	</div>
+
+    
+
+
+
+
     </div>
 	</div>
     
@@ -400,34 +462,33 @@ wow.init();
 	<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
 	<div   class="IITI">
 		<h1 class="evheading"> Explore us </h1>
+		<div class="qo1">
+			<p>“All humans are entrepreneurs not because 
+				they should start companies but because the will to create is encoded in human DNA.”</p>
+		</div>
+
 	<div class="hover_wrap">
 		<div class="row">
 			<figure class="hover1">
-				<img src="/photos/2.png" alt="" width="400" height="300">
+				<img src="/photos/resour.jpeg" alt="" width="400" height="300">
 				<p>recources</p>
 				<figcaption><strong>Resources>></strong></figcaption>
 			</figure>
 
 			<figure class="hover2">
-				<img src="/Photos/pexels-helena-lopes-697243.jpg" alt="" width="400" height="300">
+				<img src="photos/team.jpeg" alt="" width="400" height="300">
 				<p>Meet our team</p>
 				<figcaption><strong>Meet our team>></strong></figcaption>
 			</figure>
-
-			<figure class="hover3">
-				<img src="/Photos/pexels-miguel-á-padriñán-3785932.jpg" alt="" width="400" height="300">
-				<figcaption><strong>mmmmmm</strong></figcaption>
+			<figure class="hover2">
+				<img src="photos/innovation.jpeg" alt="" width="400" height="300">
+				<p>Innovation and Projects</p>
+				<figcaption><strong>Innovation and Projects>></strong></figcaption>
 			</figure>
 
-			<figure class="hover4">
-				<img src="/Photos/rohan-makhecha-jw3GOzxiSkw-unsplash.jpg" alt="" width="400" height="300">
-				<figcaption><strong>nnnnnnnnnn</strong></figcaption>
-			</figure>
+			
 
-			<figure class="hover5">
-				<img src="/Photos/rohan-makhecha-jw3GOzxiSkw-unsplash.jpg" alt="" width="400" height="300">
-				<figcaption><strong>oooooooooo</strong></figcaption>
-			</figure>
+		
 		</div>
 	</div>
     </div>
