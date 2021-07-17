@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}Contact us{% endblock %}
+{%block content%}
+
+    <div class="container" style="position:absolute;top:100px;">
+        <h1>Contact us in case of any queries</h1>
+        <br/>
+     <form action="/thankyou" method="POST">
+     <div class="mb-3">
+        
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" name='Name'>
+      </div>
+     
+      <div class="mb-3">
+      
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name='Email'>
+      </div>
+      <div class="mb-3" >
+        
+        <input type="text" class="form-control"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Subject" name='Subject'>
+      </div>
+     
+      <div class="mb-3" >
+        <textarea  class=" form-control textarea input" id="exampleInputEmail1" aria-describedby="emailHelp" rows="8" cols="70" placeholder="Message" name='Message'></textarea>
+        </textarea>
+      </div>
+      
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+   </div>
+
+{% endblock content %}

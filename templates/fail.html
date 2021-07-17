@@ -1,0 +1,35 @@
+{%extends "layout.html" %}
+{% block title %}Thank you{% endblock%}
+{% block content %}
+
+        <div class="container" style="position:absolute;top:200px;">
+            <h1>ERROR!</h1>
+        <small>{{error_stmt}}</small>
+        <br/><br/>
+        <form action="/thankyou" method="POST">
+          <div class="mb-3">
+             
+             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" name='Name' value="{{name}}">
+           </div>
+          
+           <div class="mb-3">
+           
+           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name='Email' value="{{email}}">
+           </div>
+           <div class="mb-3">
+             
+             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Subject" name='Subject' value="{{subject}}">
+           </div>
+
+           <div class="mb-3" >
+            <textarea  class=" form-control textarea input" id="exampleInputEmail1" aria-describedby="emailHelp" rows="8" cols="70" placeholder="Message" name='Message' value={{message}}></textarea>
+            </textarea>
+          </div>
+          
+           
+           <input type="submit" class="btn btn-primary" value="Submit">
+         </form>
+        </div>
+        
+    
+{% endblock content %}

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<!-- gaurav stuff-->
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
++0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+	<!-- ended-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E-CELL_WEBSITE</title>
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> 
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	
+-->
+	<link href="{{url_for('static',filename='style.css')}}" rel="stylesheet">
+</head>
+
+
+<body>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    
+    <script>
+	  var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+  }
+);
+wow.init();
+	</script>
+    
+    <div>
+	<body class="hero-anime">
+       
+		<div class="navigation-wrap bg-light start-header start-style">
+			<div class="container">
+				<div class="row" style="width:400px;">
+					<div class="col-12">
+						<nav class="navbar navbar-expand-md navbar-light">
+
+							<a class="navbar-brand" href="https://front.codes/" target="_blank"><img
+									src="{{url_for('static',filename='iiti-ecell-try-logo.png')}}" alt=""></a>
+
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav ms-auto py-4 py-md-0" style ="padding-left:300px;">
+									<li class="nav-item pl-4 pl-md-0 ms-0 ms-md-4 active">
+										<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+											role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+											<a class="dropdown-item" href="#">Another action</a>
+										</div>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ms-0 ms-md-4">
+										<a class="nav-link" href="#eviiti">Events</a>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ms-0 ms-md-4">
+										<a class="nav-link" href="#iniiti">Initiative</a>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ms-0 ms-md-4">
+										<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+											role="button" aria-haspopup="true" aria-expanded="false">Other clubs</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+											<a class="dropdown-item" href="#">Another action</a>
+										</div>
+									</li>
+									<li class="nav-item pl-4 pl-md ms-0 ms-md-4">
+										<a class="nav-link" href="{{url_for('resources')}}" rel="import">Resources</a>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ms-0 ms-md-4">
+										<a class="nav-link" href="#alignit">Partners</a>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ms-0 ms-md-4">
+										<a class="nav-link" href="{{url_for('query')}}">Contact us</a>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ms-0 ms-md-4">
+										<a class="nav-link" href="{{url_for('team')}}">Team</a>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ms-0 ms-md-4">
+										<a class="nav-link" href="#IITI">Explore</a>
+									</li>
+								</ul>
+							</div>
+
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">⏏︎</button>
+     <script>
+		 //Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 800px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+	 </script>
+
+
+		<div class="section full-height">
+			<video class="videoback" autoplay muted loop>
+				<source src="{{url_for('static',filename='logo.mp4')}}" type="video/mp4">
+			  </video> 
+			<div class="absolute-center">
+				<div class="section">
+					<div class="container">
+						
+						<div class="row">
+							<div class="col-12">
+								<h1><span>E</span><span>n</span><span>t</span><span>r</span><span>e</span><span>p</span><span>r</span><span>e</span><span>n</span><span>e</span><span>u</span><span>r</span><span>s</span><span>h</span><span>i</span><span>p</span>				<span>C</span><span>e</span><span>l</span><span>l</span><br>
+									<span>I</span><span>I</span><span>T</span><span>I</span>
+								</h1>
+								<p><button class="button"><span>Explore</span></button> </p>
+								
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section mt-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div id="switch">
+									<div id="circle"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- Link to page
+	================================================== -->
+
+
+
+	</body>
+	</header>
+    <br><br><br><br><br><br><br>
+
+
+	
+<div  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">   
+<div class="Quote1">
+	<div class="qo" style="padding-left:150px;">
+	<p>"Entrepreneurs are risk takers, willing to roll the dice with their money or reputation on the line in support of an idea or enterprise. They willingly assume responsibility for the success or failure of a venture and are answerable for all its facets."</p>
+</div>
+  </div>
+  </div>
+
+  <section id="about" class="about-section text-center">
+	<div class="container">
+	  <div class="row" style="padding-right:460px;">
+		<div class="col-lg-8 mx-auto">
+		  <h1 class="aboutheading" style="padding-left:100px;" >E-Cell IIT Indore </h1>
+		  <p class="aboutustext" style ="width:800px;">Entrepreneurship Cell at IIT Indore believes that entrepreneurship is
+			not just about starting companies, but a pathway towards India’s socio-economic development. Our vision is to make students and
+			faculty ‘entrepreneurial’ in every work that they do. We hope to enable them to solve global challenges as we see students as the
+			greatest capital and intend to nurture them, provide them with opportunities for excellence.</p>
+		  
+		  <h1 class="aboutheading" style="padding-left:100px;">Vision</h1>
+		  <p class="aboutustext" style ="width:800px;">E-Cell aims to unlock students’ latent inventive potential. Not only do we show you the doors of opportunity but we also equip you to walk through it. Through our conference, social events, lectures, speaker engagements and workshops, we're hoping to bring together everyone interested in the startup world and to help students best utilize resources to found or join startups..</p>
+
+		</div>
+	  
+  </section>
+  <div  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> 
+  <div class="container-fluid mt-100 tofix" >
+    <div class="row tofix" style="padding-right:270px;">
+        <div class="col-md-8 mr-auto ml-auto tofix">
+            <div class="card card-raised card-carousel">
+                <div id="carouselindicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselindicators" data-slide-to="0" class=""></li>
+                        <li data-target="#carouselindicators" data-slide-to="1" class="active"></li>
+                        <li data-target="#carouselindicators" data-slide-to="2" class=""></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-item-left"> <img class="d-block w-100" src="http://ecell.iiti.ac.in/2.JPG" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4> <i class="fa fa-map-marker"></i> Dharamshala,Himachal Pradesh, India </h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-next carousel-item-left"> <img class="d-block w-100" src="http://ecell.iiti.ac.in/2.JPG" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4> <i class="fa fa-map-marker"></i> Manali,Himachal Pradesh, India </h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item"> <img class="d-block w-100" src="http://ecell.iiti.ac.in/2.JPG" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4> <i class="fa fa-map-marker"></i> Kerala,Kerala, India </h4>
+                            </div>
+                        </div>
+                    </div> <a class="carousel-control-prev" href="#carouselindicators" role="button" data-slide="prev" data-abc="true"> <i class="fa fa-chevron-left"></i> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselindicators" role="button" data-slide="next" data-abc="true"> <i class="fa fa-chevron-right"></i> <span class="sr-only">Next</span> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+ <!--sponsour - sejal below
+ <div class="container -md text-center aligning" >
+    <h1>PARTNERS</h1>
+  </div>
+  
+
+  <div class="container-md text-center aligning sponsors" style="right:0px;left:0px;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+        <ol class="carousel-indicators">
+          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
+          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
+          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></li>
+          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></li>
+          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></li>
+          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></li>
+        </ol>
+        <div class="carousel-inner" >
+          <div class="carousel-item active" class="col align-self-center;">
+            <img src="http://ecell.iiti.ac.in/2.JPG" class="d-block w-100" alt="..." >
+          </div>
+          <div class="carousel-item" class="col align-self-center;">
+            <img src="http://ecell.iiti.ac.in/2.JPG" class="d-block w-100" alt="..."  >
+          </div>
+          <div class="carousel-item" class="col align-self-center;">
+            <img src="http://ecell.iiti.ac.in/2.JPG" class="d-block w-100" alt="..."  >
+          </div>
+          <div class="carousel-item" class="col align-self-center;">
+            <img src="http://ecell.iiti.ac.in/2.JPG" class="d-block w-100" alt="..."  >
+          </div>
+          <div class="carousel-item" class="col align-self-center;">
+            <img src="http://ecell.iiti.ac.in/2.JPG" class="d-block w-100" alt="..."  >
+          </div>  
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+  </div>  -->
+
+   <br> <br><br>
+
+    
+<div  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> 
+    <div id="eviiti" class="IITIevents" >
+		<h1 class="evheading"> EVENTS </h1>
+	<div class="row">
+		<div  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> 
+		<div class="events">
+
+			<figure class="event1">
+				<p>IPL Auction 2019</p>
+				<figcaption>
+					Welcome to the thrill of a live IPL auction! Have you ever wondered what would you do if you get a
+					chance to build in the shoes of a bidder and build your dream IPL team in the shoes of a bidder and
+					build your dream IPL team love cricket and if you have followed IPL, this event is a must for
+					you.<br> Rules:<br>1)Each team can have a maximum of 5 members<br>2) No member can be a part of more
+					than one team.Violation of this rule will lead to disqualification of both the teams<br>3) All the
+					members should be present during both the rounds of the competition. <br> The decision of the judges
+					will be final in case of any discrepancy.
+					<br>
+				</figcaption>
+			</figure>
+		</div>
+		</div>
+		<div  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> 
+		<div class="events">
+			
+			<figure class="event2">
+				
+				<p>E-cells meetup 2020</p>
+				<figcaption>
+					E-Cells meetup 2020 is introduced in the form of disscussion session cum competition to make it more
+					exciting.All the E-Cells present will be given an oportunity to showcase their E-Cell's
+					working,culture, and contribution in building a motivated environment for young lads to think beyond
+					the conventional career prospects solve amore significant problem of society through innovation and
+					technology.<br> "Fantastically organised, filled with energy and passion, had an amazing time, Great
+					work by IIT Indore to take the initiative of connecting all the universities entrepreneurial spirits
+					tougher thought this energy powerhouse. Was totally a delight to judge the event. Amazing stuff
+					happening!! Cheers"<br>
+					<br>
+					<div class="author">-Kunal Chandramani</div>
+				</figcaption>
+			</figure>
+		</div>
+		</div>
+        <div  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> 
+		<div class="events">
+			<figure class="event3">
+				<p>Biz Quiz 2019</p>
+				<figcaption>
+					Entrepreneurship Cell, IIT Indore brings you Biz Qiz an online business quiz in association with
+					Dare2Compete.<br>1)This quiz is open to all. <br>2) Each team can have 2 participants. A person
+					cannot be a part of more than one team<br>3) All quizzes under Online Quizzing Festival Season 4
+					will be of 25 minutes and will cover questions from various domains<br>4) All decisions in matter of
+					eligibility, authenticity & final judgement will be with Dare2Compete<br>5) Only one team per
+					college will be awarded top 3 ranks for any quiz under Online Quizzing Festival Season 4<br> A team
+					can only be part of the top 3 ranks in maximum 10 quizzes during Online Quizzing Festival Season 4.
+					This is to ensure that we give chance to every team to win prizes.
+					<br>
+				</figcaption>
+			</figure>
+		</div>
+		</div>
+        <div  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> 
+		<div class="events">
+			<figure class="event4">
+				<p>Crazy Ideas 2019</p>
+				<figcaption>
+					In this world and age, innovation is the name of the game. Ideas are everywhere yet few of them ever
+					take shape and become something more. “Crazy Ideas” is an up and coming national event organized by
+					the E-Cell IIT Indore, in an effort to promote both creative thinking and strategic planning from an
+					early age. Targeted at high school students, we hope to bring out the entrepreneur in you and help
+					you think how you could implement that in real life and monetize it – if only hypothetically. Your
+					job is to come up with the craziest idea you can think of – it doesn’t have to be something that’s
+					needed in today’s world, just something you feel makes this world crazier than it already is and
+					could be somehow, if not now, in near future, be viable enough for implementation.<br>Rules:<br> The
+					startup would be evaluated on 100 Mark , 90 Being in the hands of the professor. 10 Being based on
+					the social influence of the person. As the entrepreneur need all-rounder skills. If Plagiarism is
+					found , the participant would we straight away disqualified.
+					The Registrations would begin from 5 February 2019 and will open till 16 February 23:59:59. The
+					registration would also include the ideas at the same time.
+					<br>
+				</figcaption>
+			</figure>
+		</div>
+		</div>
+
+
+		<div  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> 
+		<div class="events">
+			<figure class="event5">
+				<p>Samsung Innovation award 2019</p>
+				<figcaption>
+					Samsung Innovation Award is organized annually by Samsung R&D Institute India – Bangalore. The event
+					aims to identify , encourage and reward innovative ides and projects developed by student faculty
+					teams at premier Institutes. This year Entrepreneurship Cell, IIT Indore organized Samsung
+					Innovation Award 2019 in IIT Indore.
+					<br>
+				</figcaption>
+			</figure>
+		</div>
+	</div>
+		<br>
+		</figcaption>
+		</figure>
+	</div>
+
+    
+
+
+
+
+    </div>
+	</div>
+    
+	
+
+
+
+	<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+	<div   class="IITI">
+		<h1 class="evheading"> Explore us </h1>
+		<div class="qo1" style="padding-left:150px;">
+			<p>“All humans are entrepreneurs not because 
+				they should start companies but because the will to create is encoded in human DNA.”</p>
+		</div>
+
+	<div class="hover_wrap">
+		<div class="row">
+			<figure class="hover1">
+				<img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/aditi/adwork/photos/resour.jpeg?raw=true" alt="" width="200" height="300">
+				<p>recources</p>
+				<figcaption><strong>Resources>></strong></figcaption>
+			</figure>
+
+			<figure class="hover2">
+				<img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/aditi/adwork/photos/team.jpeg?raw=true" alt="" width="200" height="300">
+				<p>Meet our team</p>
+				<figcaption><strong>Meet our team>></strong></figcaption>
+			</figure>
+			<figure class="hover2">
+				<img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/aditi/adwork/photos/innovation.jpeg?raw=true" alt="" width="200" height="300">
+				<p>Innovation and Projects</p>
+				<figcaption><strong>Innovation and Projects>></strong></figcaption>
+			</figure>
+
+			
+
+		
+		</div>
+	</div>
+    </div>
+
+
+    <div id="iniiti" class="IITIwhat">
+		<h1 class="evheading"> What we do? </h1>
+	<div class="tab">
+		<button class="tablinks" onmouseover="openCity(event, 'E-Summit')">E-Summit</button>
+		<button class="tablinks" onmouseover="openCity(event, 'Lecture Series')">Lecture Series</button>
+		<button class="tablinks" onmouseover="openCity(event, 'Engendea')">Engendea</button>
+		<button class="tablinks" onmouseover="openCity(event, 'Workshops')">Workshops</button>
+		<button class="tablinks" onmouseover="openCity(event, 'Entrepreneurship Awareness Camp')">Entrepreneurship
+			Awareness Camp</button>
+	</div>
+
+	<div id="E-Summit" class="tabcontent">
+		<h3  class="heado">E-Summit</h3>
+		<p  class=" conto">E-Summit is the flagship event conducted by E-Cell, IIT Indore. It’s a conclave of competitions, workshops,
+			panel discussions and speeches from the biggest names in the world of business.</p>
+		<img  class="imago" src="http://ecell.iiti.ac.in/2.JPG" width="300" height="300" alt="">
+	</div>
+
+	<div id="Lecture Series" class="tabcontent">
+		<h3 class="heado">Lecture Series</h3>
+		<p class=" conto">PDiscover, learn, develop skills that every entrepreneur requires in his journey. A chance to learn from the
+			best experts of the country.</p>
+		<img  class="imago" src="http://ecell.iiti.ac.in/31.jpg" width="300" height="300" alt="">
+	</div>
+
+	<div id="Engendea" class="tabcontent">
+		<h3 class="heado">Engendea</h3>
+		<p class=" conto">A day long event where teams have to pitch an idea and develop a business model for the same. Exciting prices
+			always await at the other end.</p>
+		<img  class="imago" src="http://ecell.iiti.ac.in/ENGEN-01.jpg" width="300" height="300" alt="">
+	</div>
+
+	<div id="Workshops" class="tabcontent">
+		<h3 class="heado">Workshops</h3>
+		<p class=" conto">An interactive training session offering innovative delivering models where participants gain hands on
+			experience to establish vibrant communities.</p>
+		<img class="imago"  src="http://ecell.iiti.ac.in/gl-01.jpg" width="300" height="300" alt="">
+	</div>
+
+	<div id="Entrepreneurship Awareness Camp" class="tabcontent">
+		<h3 class="heado">Entrepreneurship Awareness Camp
+		</h3>
+		<p class=" conto">EAC was conducted by E-Cell, IIT Indore to spread the entrepreneurial awareness among the students.</p>
+		<img  class="imago" src="http://ecell.iiti.ac.in/e21-01.jpg" width="300" height="300" alt="">
+	</div>
+
+	<div class="clearfix"></div>
+</div>
+
+
+	<script>
+		(function ($) {
+			"use strict";
+
+			$(function () {
+				var header = $(".start-style");
+				$(window).scroll(function () {
+					var scroll = $(window).scrollTop();
+
+					if (scroll >= 10) {
+						header.removeClass('start-style').addClass("scroll-on");
+					} else {
+						header.removeClass("scroll-on").addClass('start-style');
+					}
+				});
+			});
+
+			//Animation
+
+			$(document).ready(function () {
+				$('body.hero-anime').removeClass('hero-anime');
+			});
+
+			//Menu On Hover
+
+			$('body').on('mouseenter mouseleave', '.nav-item', function (e) {
+				if ($(window).width() > 750) {
+					var _d = $(e.target).closest('.nav-item'); _d.addClass('show');
+					setTimeout(function () {
+						_d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+					}, 1);
+				}
+			});
+
+			//Switch light/dark
+
+			$("#switch").on('click', function () {
+				if ($("body").hasClass("dark")) {
+					$("body").removeClass("dark");
+					$("#switch").removeClass("switched");
+				}
+				else {
+					$("body").addClass("dark");
+					$("#switch").addClass("switched");
+				}
+			});
+
+		})(jQuery);
+
+
+		function openCity(evt, Eventname) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(Eventname).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+
+<div  class="container-md text-center aligning " id="alignit" style="right:0px;left:0px;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <ol class="carousel-indicators">
+          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
+          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
+        </ol>
+        <div class="carousel-inner" style ="padding :50px;">
+          <div class="carousel-item active" class="col align-self-center;">
+            <img src="{{url_for('static',filename='aspectratiopicevent1.png')}}" class="d-block w-100" alt="..."  >
+          </div>
+          <div class="carousel-item" class="col align-self-center;">
+            <img src="{{url_for('static',filename='aspectratiopicevent2.png')}}" class="d-block w-100" alt="..."  >
+          </div>
+          <div class="carousel-item" class="col align-self-center;">
+            <img src="{{url_for('static',filename='aspectratiopicevent3.png')}}" class="d-block w-100" alt="..."  >
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+ 
+
+ 
+
+
+
+	<!--my stuff below
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/js/main.js"></script> 
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo me-auto me-lg-0"><a href="homeadwork.html">e-cell</a></h1> -->
+	<!-- Uncomment below if you prefer to use an image logo -->
+	<!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+	<!--  <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href=".html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div> -->
+
+	<!-- </header>
+    
+    <section id="hero" class="d-flex align-items-center">
+        
+       
+          
+         <video autoplay muted loop>
+           <source src="logo.mp4" type="video/mp4">
+         </video> 
+         <header class="viewport-header">
+           <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100" >
+           <h1> ENTREPRENEURNSHIP CELL </h1>
+           <h2>IIT INDORE</h2>
+           <a href="about.html" class="btn-about">explore</a>
+          </div> 
+         </header> 
+        </div>
+      </section> -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="footer-cta pt-5 pb-5">
+				<div class="row" style="width:1200px;">
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="bi bi-geo-alt"></i>
+							<div class="cta-text">
+								<h4>Find us</h4>
+								<span>Room 302-B, PHY-1, Academic POD, IIT Indore, Madhya Pradesh-452020</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="bi bi-phone"></i>
+							<div class="cta-text">
+								<h4>Call us</h4>
+								<span>Vishwas Raj :+91-6387891938
+									Sudeep Patra :+91-9587637471</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="bi bi-envelope"></i>
+							<div class="cta-text">
+								<h4>Mail us</h4>
+								<span>ecell@iiti.ac.in</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-content pt-5 pb-5">
+				<div class="row" style="width:1200px;">
+					<div class="col-xl-4 col-lg-4 mb-50">
+						<div class="footer-widget">
+							<div class="footer-logo">
+								<a href="index.html"><img src="{{url_for('static',filename='iiti-ecell-try-logo.png')}}" class="img-fluid" alt="logo"></a>
+							</div>
+							<div class="footer-text">
+								<p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+									incididuntut consec tetur adipisicing
+									elit,Lorem ipsum dolor sit amet.</p>
+							</div>
+							<div class="footer-social-icon">
+								<span>Follow us</span>
+								<a href="#"><i class="facebookf bi bi-facebook bi-5x"></i></a>
+								<a href="#"><i class="twitterf bi bi-twitter"></i></a>
+								<a href="#"><i class="instagramf bi bi-instagram"></i></a>
+								<a href="#"><i class="linkedinf bi bi-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+						<div class="footer-widget">
+							<div class="footer-widget-heading">
+								<h3>Useful Links</h3>
+							</div>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">about</a></li>
+								<li><a href="#">services</a></li>
+								<li><a href="#">portfolio</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">About us</a></li>
+
+								<li><a href="#"> Team</a></li>
+								<li><a href="#">Contact us</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+						<div class="footer-widget">
+							<div class="footer-widget-heading">
+								<h3>Subscribe</h3>
+							</div>
+							<div class="footer-text mb-25">
+								<p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+							</div>
+							<div class="subscribe-form">
+								<form action="#">
+									<input type="text" placeholder="Email Address">
+									<button><i class="fab fa-telegram-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 text-center text-lg-left">
+						<div class="copyright-text">
+							<p>Copyright © <a href="homeadwork.html">E-Cell IIT Indore 2021</a>| All Rights Reserved|
+								Developed with ❤ by the <a href="{{url_for('team')}}">TEAM </a> </p>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+						<div class="footer-menu">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Terms</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Policy</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+	<script>
+		$(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});
+	</script>
+</div>
+</body>
+
+</html>

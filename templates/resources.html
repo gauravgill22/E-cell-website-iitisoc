@@ -1,0 +1,1014 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-
++0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="/Boolstrap/vendors/fonts/bootstrap-icons.woff">
+  <link rel="stylesheet" href="/Boolstrap/vendors/fonts/bootstrap-icons.woff2">
+  <link rel="stylesheet" href="/Boolstrap/vendors/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="/Boolstrap/vendors/icons/bootstrap-icons.json">
+
+
+  <style>
+
+
+
+.start-header {
+	opacity: 0.5;
+	transform: translateY(0);
+	padding: 20px 0;
+	box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.start-header.scroll-on {
+	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+	padding: 10px 0;
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.start-header.scroll-on .navbar-brand img{
+	height: 24px;
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.navigation-wrap{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.navbar{
+	padding: 0;
+}
+.navbar-brand img{
+	height: 28px;
+	width: auto;
+	display: block;
+  filter: brightness(10%);
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.navbar-toggler {
+	float: right;
+	border: none;
+	padding-right: 0;
+}
+.navbar-toggler:active,
+.navbar-toggler:focus {
+	outline: none;
+}
+.navbar-light .navbar-toggler-icon {
+	width: 24px;
+	height: 17px;
+	background-image: none;
+	position: relative;
+	border-bottom: 1px solid #000;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after, 
+.navbar-light .navbar-toggler-icon:before{
+	width: 24px;
+	position: absolute;
+	height: 1px;
+	background-color: #000;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after{
+	top: 8px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+.nav-link{
+	color: #212121 !important;
+	font-weight: 500;
+    transition: all 200ms linear;
+}
+.nav-item:hover .nav-link{
+	color: #4328d8 !important;
+}
+.nav-item.active .nav-link{
+	color: #777 !important;
+}
+.nav-link {
+	position: relative;
+	padding: 5px 0 !important;
+	display: inline-block;
+}
+.nav-item:after{
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	content: '';
+	background-color: skyblue;
+	opacity: 0;
+    transition: all 200ms linear;
+}
+.nav-item:hover:after{
+	bottom: 0;
+	opacity: 1;
+}
+.nav-item.active:hover:after{
+	opacity: 0;
+}
+.nav-item{
+	position: relative;
+    transition: all 200ms linear;
+}
+
+.nav-item .dropdown-menu {
+    transform: translate3d(0, 10px, 0);
+    visibility: hidden;
+    opacity: 0;
+	max-height: 0;
+    display: block;
+	padding: 0;
+	margin: 0;
+    transition: all 200ms linear;
+}
+.nav-item.show .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+	max-height: 999px;
+    transform: translate3d(0, 0px, 0);
+}
+.dropdown-menu {
+	padding: 10px!important;
+	margin: 0;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #212121;
+	background-color: #fcfaff;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    transition: all 200ms linear;
+}
+.dropdown-toggle::after {
+	display: none;
+}
+
+.dropdown-item {
+	padding: 3px 15px;
+	color: #212121;
+	border-radius: 2px;
+    transition: all 200ms linear;
+}
+.dropdown-item:hover, 
+.dropdown-item:focus {
+	color: #fff;
+	background-color: rgba(129,103,169,.6);
+}
+@media (max-width: 767px) { 
+	h1{
+		font-size: 38px;
+	}
+	.nav-item:after{
+		display: none;
+	}
+	.nav-item::before {
+		position: absolute;
+		display: block;
+		top: 15px;
+		left: 0;
+		width: 11px;
+		height: 1px;
+		content: "";
+		border: none;
+		background-color: #000;
+		
+	}
+	.dropdown-toggle::after {
+		position: absolute;
+		display: block;
+		top: 10px;
+		left: -23px;
+		width: 1px;
+		height: 11px;
+		content: "";
+		border: none;
+		background-color: #000;
+		
+		transition: all 200ms linear;
+	}
+	.dropdown-toggle[aria-expanded="true"]::after{
+		transform: rotate(90deg);
+		opacity: 0;
+	}
+	.dropdown-menu {
+		padding: 0 !important;
+		background-color: transparent;
+		box-shadow: none;
+		transition: all 200ms linear;
+	}
+	.dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+		margin-top: 10px !important;
+		margin-bottom: 20px !important;
+	}
+	body.dark .nav-item::before {
+		background-color: #fff;
+	}
+	body.dark .dropdown-toggle::after {
+		background-color: #fff;
+	}
+	body.dark .dropdown-menu {
+		background-color: transparent;
+		box-shadow: none;
+	}
+}
+
+.Quote1{
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    color: white;
+    opacity: 0.95;
+    
+    font-size: 2em;
+    text-align: center;
+    line-height: 250px;
+}
+    body {
+        font-family: "Open Sans", sans-serif;
+    }
+    h2 {
+        color: #333;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        position: relative;
+        margin: 30px 0 60px;
+    }
+    h2::after {
+        content: "";
+        width: 100px;
+        position: absolute;
+        margin: 0 auto;
+        height: 3px;
+        background: #8fbc54;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+    }
+    .col-center {
+        margin: 0 auto;
+        float: none !important;
+    }
+    .carousel {
+        padding: 0 70px;
+    }
+    .carousel .carousel-item {
+        color: #999;
+        font-size: 14px;
+        text-align: center;
+        overflow: hidden;
+        min-height: 290px;
+    }
+    .carousel .carousel-item .img-box {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 10%;
+    }
+    .carousel .img-box img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 10%;
+    }
+    .carousel .testimonial {
+        padding: 30px 0 10px;
+    }
+    .carousel .overview {	
+        font-style: italic;
+    }
+    .carousel .overview b {
+        text-transform: uppercase;
+        color: #7AA641;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        top: 50%;
+        background: none;
+    }
+    .carousel-control-prev i, .carousel-control-next i {
+        font-size: 68px;
+        line-height: 42px;
+        position: absolute;
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.8);
+        text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+    }
+    .carousel-indicators {
+        bottom: -40px;
+    }
+    .carousel-indicators li, .carousel-indicators li.active {
+        width: 12px;
+        height: 12px;
+        margin: 1px 3px;
+        border-radius: 50%;
+        border: none;
+    }
+    .carousel-indicators li {	
+        background: #999;
+        border-color: transparent;
+        box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+    }
+    .carousel-indicators li.active {	
+        background: #555;		
+        box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+    }
+
+
+    .how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color:yellowgreen;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color:turquoise;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 70%;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+
+
+
+.grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+figure.effect-layla {
+  background: #18a367;
+}
+
+figure.effect-layla img {
+  height: 390px;
+}
+
+figure.effect-layla figcaption {
+  padding: 3em;
+}
+
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after {
+  position: absolute;
+  content: '';
+  opacity: 0;
+}
+
+figure.effect-layla figcaption::before {
+  top: 50px;
+  right: 30px;
+  bottom: 50px;
+  left: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+figure.effect-layla figcaption::after {
+  top: 30px;
+  right: 50px;
+  bottom: 30px;
+  left: 50px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+
+figure.effect-layla h2 {
+  padding-top: 26%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-layla p {
+  padding: 0.5em 2em;
+  text-transform: none;
+  opacity: 0;
+  -webkit-transform: translate3d(0,-10px,0);
+  transform: translate3d(0,-10px,0);
+}
+
+figure.effect-layla img,
+figure.effect-layla h2 {
+  -webkit-transform: translate3d(0,-30px,0);
+  transform: translate3d(0,-30px,0);
+}
+
+figure.effect-layla img,
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after,
+figure.effect-layla p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-layla:hover img {
+  opacity: 0.7;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover figcaption::before,
+figure.effect-layla:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover figcaption::after,
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p,
+figure.effect-layla:hover img {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+
+
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,
+.Flexible-container video, /* for html5 video embeds */
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.bloghead{
+    justify-content: center;
+
+}
+	
+  
+ 
+  
+ 
+
+
+
+/**
+ * Pen styles
+ */
+html { box-sizing: border-box; height: 100%; overflow-y: scroll; font-size: 62.5%; }
+*, *:before, *:after { box-sizing: inherit; }
+body {
+	background: #fff;
+	color: #444;
+	font-family: 'Open Sans', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+	font-size: 1.8rem;
+	line-height: 1.2;
+}
+
+header {
+  width: 100%;
+  padding: 2em;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+}
+  
+
+main {
+  padding: 2rem 0;
+}
+
+article {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+
+
+
+
+    </style>
+
+</head>
+<body>
+   
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+
+
+
+    <div class="navigation-wrap bg-light start-header start-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                     <nav class="navbar navbar-expand-md navbar-light">
+                    
+                        <a class="navbar-brand" href="https://front.codes/" target="_blank"><img src= "{{url_for('static', filename='iiti-ecell-try-logo.png')}}"  alt=""></a>	
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                                    <a class="nav-link" href="{{url_for('homeadwork')}}">Home</a>
+                                    
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="#Books">Books</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="#Blogs">Blogs</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Videos</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="#"></a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="{{url_for('query')}}">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </nav>		
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Quote1">
+        IDEATE. INNOVATE. INCUBATE.
+      </div>
+    
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>   
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="img-box"><img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/Jeff-Bezos.jpeg?raw=true" alt=""></div>
+                            <p class="testimonial">"I believe you have to be willing to be misunderstood if you’re going to innovate."<br>Jeff Bezos has taught a generation of founders to always think like it is day one–never stop inventing.He taught us that working backwards from a customer need is core to being a great entrepreneur.</p>
+                            <p class="overview"><b>xyz</b>abc</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-box"><img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/Ratan-Tata-768x768.jpeg?raw=true" alt=""></div>
+                            <p class="testimonial">"I don’t believe in taking the right decisions.I take decisions & then make them right."<br>Ratan Tata is one of India’s most prominent business and philanthropic leaders. Even today, he is known as the most successful entrepreneurs in the country.</p>
+                            <p class="overview"><b>xyz</b>abc</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-box"><img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/Ritesh-Agarwal-e1617969729721.jpeg?raw=true" alt=""></div>
+                            <p class="testimonial">"Start small, nail it, and then make it big"<br>Ritesh Agarwal is an Indian billionaire entrepreneur and the founder and CEO of OYO Rooms. He is also a recipient of the Business World Young Entrepreneur Award. </p>
+                            <p class="overview"><b>xyz</b>abc</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-box"><img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/Mark-Zuckerberg.jpeg?raw=true" alt=""></div>
+                            <p class="testimonial">"The question isn’t, ‘What do we want to know about people?’, It’s, ‘What do people want to tell about themselves?"<br>Mark Zuckerberg is co-founder and CEO of a widely popular social-networking website Facebook. He is one of the world’s richest people, with a fortune of 90 billion US dollars.
+
+                            </p>
+                            <p class="overview"><b>xyz</b>abc</p>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="how-section1" id="Books">
+        <div class="row">
+            <div class="col-md-6 how-img">
+                <img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/6027a0c20f124c72cfc63406_Rich%20Dad%20Poor%20Dad.jpeg?raw=true" class="rounded-circle img-fluid" alt=""/>
+            </div>
+            <div class="col-md-6">
+                <h4>Rich Dad Poor Dad</h4>
+                            <h4 class="subheading">Robert I. Kiyosaki</h4>
+            <p class="text-muted">When you are younger in age, financial education might not be as high as the older competition, which puts you in a place of vulnerability. Robert Kiyosaki’s book breaks down everything you need to know about financial education without giving you a headache.The book will shine a light on the 9-5 job and the rat race that keeps you in that job you hate in order to pay the debts. He teaches you how to make your entrepreneurial dreams come true by giving you the cold, hard truth about wealth – it’s not found by going to school, getting good grades, graduating with a diploma, and working for a secure company.
+
+            </p>
+            <button class="btn"><i class="fa fa-download"></i><a href ="{{url_for('book1')}}">Download</a>
+            </button>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-md-6">
+                <h4>The Lean StartUp</h4>
+                            <h4 class="subheading">Eric Ries</h4>
+                            <p class="text-muted">The games have changed; building a business is no longer about updating the business plan every other week according to Eric Ries.
+
+                                In his book, he goes over the various techniques an entrepreneur can use in order to create a business that will go against the odds and succeed. He takes on a more scientific and intuitive approach as to how to be a successful entrepreneur with a lasting business under your arm.</p>
+                                <button class="btn"><i class="fa fa-download"></i><a href ="{{url_for('book2')}}">Download</a>
+                                </button>
+            </div>
+            <div class="col-md-6 how-img">
+                <img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/lean%20startup.jpej.png?raw=true" class="rounded-circle img-fluid" alt=""/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 how-img">
+                 <img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/the%20entrepreneur%20mind.jpg?raw=true" class="rounded-circle img-fluid" alt=""/>
+            </div>
+            <div class="col-md-6">
+                <h4>The Entrepreneur Mind</h4>
+                            <h4 class="subheading">
+                                Kevin D. Jhonson
+                                </h4>
+                            <p class="text-muted">Everything starts in the mind. If you have negative thoughts all day, it’s pretty certain that your day will not end on a good note.
+
+                                Kevin D. Johnson knows that and wants to help entrepreneurs around the world to change their mindset in order to be successful. In his book, The Entrepreneur Mind, Kevin D. Johnson talks about the different ways to change your way of thinking in order to start a business, make it grow, and make it last.</p>
+                                <button class="btn"><i class="fa fa-download"></i><a href ="{{url_for('book3')}}">Download</a>
+                                </button>
+                            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Rework</h4>
+                            <h4 class="subheading">Jason Fried & David Hansson</h4>
+                            <p class="text-muted">Compared to Alexander Osterwalder, David Hanson and Jason Fried want to approach the other type of entrepreneurs – the ones who want fast results and don’t really care or have the time to go through all the basic steps.
+
+                                The two authors team up together to crunch down the basics and create a whole new system that will make you act upon your dreams and goals faster.
+                                
+                                The book will motivate you to get up on your feet and move forward without planning the steps on a piece of paper before.</p>
+                                <button class="btn"><i class="fa fa-download"></i><a href ="{{url_for('book4')}}">Download</a>
+                                </button>
+            </div>
+            <div class="col-md-6 how-img">
+                <img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/Rework.jpeg?raw=true" class="rounded-circle img-fluid" alt=""/>
+            </div>
+        </div>
+    </div>
+
+
+<h1 id="bloghead">BLOGS</h1>
+<div class="grid" id="Blogs">
+  <figure class="effect-layla">
+    <img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/jj-ying-7JX0-bfiuxQ-unsplash.jpg?raw=true" alt="img06"/>
+    <figcaption>
+     <span>XYZ</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti eos ad eligendi nulla officiis illum error cum accusantium recusandae hic, consequuntur omnis dignissimos ex cupiditate excepturi quisquam a ducimus.</p>
+      <a href="#">View more</a>
+    </figcaption>     
+  </figure>
+  <figure class="effect-layla">
+    <img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/jj-ying-7JX0-bfiuxQ-unsplash.jpg?raw=true" alt="img03"/>
+    <figcaption>
+       <span>xyz</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident odit, dolore ab accusantium nam magnam atque cumque ullam enim? Doloribus hic possimus beatae repudiandae numquam sint odit exercitationem rem blanditiis!</p>
+      <a href="#">View more</a>
+    </figcaption>     
+  </figure>
+  <figure class="effect-layla">
+    <img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/diego-ph-fIq0tET6llw-unsplash.jpg?raw=true" alt="img06"/>
+    <figcaption>
+     <span>XYZ</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti eos ad eligendi nulla officiis illum error cum accusantium recusandae hic, consequuntur omnis dignissimos ex cupiditate excepturi quisquam a ducimus.</p>
+      <a href="#">View more</a>
+    </figcaption>     
+  </figure>
+  <figure class="effect-layla">
+    <img src="https://github.com/gauravgill22/E-cell-website-iitisoc/blob/main/Photos/jj-ying-7JX0-bfiuxQ-unsplash.jpg?raw=true" alt="img03"/>
+    <figcaption>
+       <span>xyz</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident odit, dolore ab accusantium nam magnam atque cumque ullam enim? Doloribus hic possimus beatae repudiandae numquam sint odit exercitationem rem blanditiis!</p>
+      <a href="#">View more</a>
+    </figcaption>     
+  </figure>
+  
+</div>
+
+
+
+
+<div class="container">
+    <div class="row">
+    
+    <h1>Youtube</h1>
+    <div class='Flexible-container'>
+       <iframe width="500" height="315" src="https://www.youtube.com/embed/Ihs4VFZWwn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <h1>Youtube</h1>
+    <div class='Flexible-container'>
+       <iframe width="500" height="315" src="https://www.youtube.com/embed/Ihs4VFZWwn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+   
+</div>
+    <h1>Youtube</h1>
+    <div class='Flexible-container'>
+       <iframe width="500" height="315" src="https://www.youtube.com/embed/Ihs4VFZWwn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    
+  </div>
+
+
+  
+  
+
+
+    <script>
+
+        (function($) { "use strict";
+        
+        $(function() {
+            var header = $(".start-style");
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+            
+                if (scroll >= 10) {
+                    header.removeClass('start-style').addClass("scroll-on");
+                } else {
+                    header.removeClass("scroll-on").addClass('start-style');
+                }
+            });
+        });		
+            
+        //Animation
+        
+        $(document).ready(function() {
+            $('body.hero-anime').removeClass('hero-anime');
+        });
+        
+        //Menu On Hover
+            
+        $('body').on('mouseenter mouseleave','.nav-item',function(e){
+                if ($(window).width() > 750) {
+                    var _d=$(e.target).closest('.nav-item');_d.addClass('show');
+                    setTimeout(function(){
+                    _d[_d.is(':hover')?'addClass':'removeClass']('show');
+                    },1);
+                }
+        });	
+        
+        //Switch light/dark
+        
+        $("#switch").on('click', function () {
+            if ($("body").hasClass("dark")) {
+                $("body").removeClass("dark");
+                $("#switch").removeClass("switched");
+            }
+            else {
+                $("body").addClass("dark");
+                $("#switch").addClass("switched");
+            }
+        });  
+        
+        })(jQuery); 
+        
+        
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+
+        $(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});
+          </script>
+</body>
+</html>
