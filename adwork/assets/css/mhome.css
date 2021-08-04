@@ -1,26 +1,47 @@
 
+/*.........................*/
+  
 
 
-
-
-/* -----*/
-#myBtn {
-  display: none;
-  position: fixed;
+#mybttn {
+  display: block;
+  position:fixed;
   bottom: 20px;
-  right: 30px;
+  right: 50px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 20px;
   border: none;
   outline: none;
-  background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-  color: white;
+  background: linear-gradient(141deg, #042170 75%, #05257e 50%, #7396f5 10%);
+  color:white;
   cursor: pointer;
-  padding: 15px;
+  padding: 25px;
   border-radius: 80px;
+  
+}
+#mybttn:hover {
+  background: linear-gradient(141deg, #0fb8ad 75%, #1fc8db 50%, #2cb5e8 0%);
 }
 
-#myBtn:hover {
+/* -----*/
+.myBtn {
+ 
+  bottom: 20px;
+  right: 50px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: rgb(160, 158, 158);
+  color:#000;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 60px;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.myBtn:hover {
   background: linear-gradient(141deg, #0fb8ad 75%, #1fc8db 50%, #2cb5e8 0%);
 }
 
@@ -74,31 +95,6 @@
 
 
 
-/*Vertical social media Icons for top of home page:*/
-
-
-.icon-bar {
-  width: 90px;
-  background-color: #555;
-}
-
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 30px;
-}
-
-.icon-bar a:hover {
-  background-color: white;
-color:black;
-}
-
-.active {
-  background-color: #04AA6D;
-}
 
 
 
@@ -110,10 +106,13 @@ color:black;
 
 
 
+
+/* about us and vision below */
 
 #about{
   background-color: rgb(27, 26, 26);
-  padding-top: 5%;
+  
+  padding-top:5%;
   
 }
 .aboutustext{
@@ -132,7 +131,7 @@ color:black;
 
 
 .Quote1{
-  height: 250px;
+  height: 300px;
   width: 100%;
   background: rgb(58,58,63);
 background: linear-gradient(90deg, rgb(0, 0, 0) 14%, rgb(10, 173, 248) 50%, rgb(15, 15, 15) 86%);
@@ -143,23 +142,25 @@ background: linear-gradient(90deg, rgb(0, 0, 0) 14%, rgb(10, 173, 248) 50%, rgb(
   
 }
 .qo{
-  width: 70%;
+  width: 80%;
   margin-left: 10%;
   margin-right: 10% ;
   font-size: 1.5em;
   padding-top: 5%;
-
+  padding-bottom: 5%;
   text-align: justify;
+  color: white;
 }
 .qo1{
-  width: 70%;
+  width: 80%;
   margin-left: 10%;
   margin-right: 10% ;
+  padding-bottom: 5%;
   font-size: 1.5em;
   align-items: center;
   padding-bottom: 5%;
-  color: white;
-  text-align: justify;
+   color: white;
+  
 }
 .back-to-top {
   position: fixed;
@@ -229,7 +230,7 @@ body {
 }
 
 
-/* #Navigation
+/* #Navigation below
 ================================================== */
 
 .start-header {
@@ -884,106 +885,70 @@ body {
   
 }
 
-.events {
-  margin: 20px 25%;
-}
-.event1{
-  background-image: url(/photos/ipl.jpeg);
-}
-.event2{
-  background-image: url(/photos/meet.jpeg);
-}
-.event3{
-  background-image: url(/photos/quiz.jpeg);
-}
-.event4{
-  background-image: url(/photos/idea\ \(1\).jpeg);
-}
-.event5{
-  background-image: url(/photos/awa.jpeg);
-}
-figure {
-  position: relative;
- 
-  background-size: cover;
-  background-position: no-repeat;
-  width: 500px;
-  height: 500px;
-  box-sizing: border-box;
 
-  margin: 0 auto;
-  float: left;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-  transition: all 0.35s ease;
-  overflow: hidden;
-  backface-visibility: hidden;
-  box-shadow: 3px 2px 24px 0px rgb(158, 255, 247);
-}
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
 
-figure p {
-  width: 320px;
+/* Basic styling and positioning of elements */
 
-  background-color: rgba(119, 224, 210, 0.9);
+#some-box {background:#fff;padding:40px 0px 80px;font-family:'Open Sans', sans-serif;}
+#some-box h1 {text-align:center;}
+#some-box h3 {font-size:26px;}
+#some-box a {color:#70BCB8;text-decoration:none;display:block;font-weight:bold;}
+#some-box a:hover {color:#8E7BB2;}
 
-  border-bottom: 5px solid rgba(190, 158, 167, 0.4);
-  font-family: "Special Elite", cursive;
-  padding: 20px;
-  bottom: 0px;
-  position: absolute;
-  transition: all 0.45s ease;
+article.row {width:100%;max-width:1000px;margin:0 auto;padding:45px 0;}
+article.row div {width:49.4%;display:inline-block;position:relative;}
+
+/**** For your reference ****/
+article.row {border:1px solid #000;}
+article.row:hover {border:1px dashed black;}
+article.row div:hover {border:1px solid white ;}
+/* Your divs won't expand to contain absolute positioned images */
+
+
+#idea-one img, #idea-two img, #idea-three img {
+  position:absolute;
+  bottom:-20px;
+  top: 0;
+  left: 0;
+  right: -20px;
+  width: 493px;
+  height: 238.98px;
 }
 
-/***/
+/* Here's the column repositioning magic. This media query says "Apply these styles only until page width is greater than 750px" 
 
-figure figcaption {
-  transform: translateX(-120%);
-  background-color: rgba(164, 231, 228, 0.9);
-  width: 400px;
-  height: 500px;
-  padding: 20px;
-  position: absolute;
-  top: 0px;
-  bottom: 15px;
-  left: 0px;
-  right: 15px;
-  font-family: "Faustina", serif;
-  font-size: 15px;
-  border: 15px solid rgba(6, 194, 241, 0.4);
-  transition: all 1.5s ease;
+***To make this work, your media query has to be beneath your other styles to keep it from being overwritten later on by your general styles*** */
+@media(max-width:750px){
+
+  /* This resizes the divs that contain your content to fill the width of the page so that they stack vertically */
+  article.row div {min-width:300px;width:90%;margin:0 5%;text-align:center;display:block;}
+  
+  /* Center your text */
+	#some-other-box h3 {text-align:center;}
+
+  /* Center your image */
+	#idea-one img, #idea-two img, #idea-three img {
+    position:relative;
+    margin:auto;
+    left:inherit;
+    bottom:inherit;
+  }
+
+  /* This tells the browswer to stack the content vertically */
+  #idea-two {display:-webkit-box;display:-moz-box;display:box;-webkit-box-orient:vertical;-moz-box-orient:vertical;box-orient:vertical;}
+  
+  /* This tells the browswer to draw the first box (div:first-of-type) within our stacked content block (identified in the previous rule) in the second position ([...]box-ordinal-group:2;)
+  This gives us a nice arrangement of alternating text and images, and allows us two have a custom layout for smaller or wider screens.*/
+	#idea-two div:first-of-type {-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;box-ordinal-group:2;}
 }
 
-figure:hover figcaption {
-  transition: all 1s ease;
-  transform: translate(0, 0);
-}
-
-figure:hover p {
-  transform: translateX(-120%);
-}
-
-figure .author {
-  text-align: right;
-  margin-top: 25px;
-}
-
-h2 {
-  text-align: center;
-  background: rgba(190, 158, 167, 0.5);
-  border-bottom: 5px solid rgba(190, 158, 167, 0.9);
-  color: #333;
-  font-size: 13px;
-  font-family: "Special Elite", cursive;
-  padding: 20px;
-  width: 250px;
-  margin: auto;
-  margin-top: 40px;
-  transition: all ease 1s;
-}
-
-h2:hover {
-  background: rgba(157, 236, 241, 0.7);
-  border-bottom: 5px solid rgba(10, 187, 231, 0.8);
-}
 
 
 
@@ -1013,30 +978,11 @@ h2:hover {
   background-position: fixed;
 
 }
-.hover1{
-  margin-left: 7%;
-  margin-right: 2%;
+#explorelements{
+  width: 100%;
 }
-.hover2{
-  margin-left:2%;
-  margin-right: 2%;
-}
-.hover3{
-  position: relative;
-  margin-left: -13%;
-  margin-right: 0;
-}
- .row{
-   width: 1519.2px;
- }
-.hover4{
-  margin-left:21%;
-  margin-right: 3%;
-}
-.hover5{
-  margin-left:3%;
-  margin-right: 21%;
-}
+ 
+
 
 .hover_wrap figure  {
   width: 400px;
@@ -1197,7 +1143,7 @@ float: right;
 
 }
 
-}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1416,7 +1362,7 @@ width: 50%;
 margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-color: #ff5e14;
+color: #115c7a;
 }
 .footer-widget ul li a {
 color: #878787;
