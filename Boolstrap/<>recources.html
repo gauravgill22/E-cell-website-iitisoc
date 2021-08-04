@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <link
-    rel="stylesheet"
+    rel="stylesheet" 
+
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link rel="stylesheet" href="style.css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -40,6 +42,9 @@ id="bootstrap-css">
 
 
   <style>
+
+
+
 
 
 
@@ -274,6 +279,60 @@ id="bootstrap-css">
     text-align: center;
     line-height: 250px;
 }
+.quote1img{
+  width: 100%;
+  height: 200px;
+}
+
+
+
+/*background for navbar top*/
+.container_type {
+    display: flex;
+    align-items: center;
+   background-image: url(/Photos/);
+   background-repeat: no-repeat;
+   background-size:cover;    
+    width: 100%;
+    height: 400px;
+  }
+  
+  .typewriter {
+    font-family: sans-serif;
+    color: #fff;
+   justify-content: center;
+    display: block;
+    
+  }
+  .typewriter-text {
+    padding-right: 10px;
+    color: rgb(29, 168, 223);
+    border-right: solid rgb(28, 166, 221) 7px;
+    text-transform: uppercase;
+    animation: cursor 1s ease-in-out infinite;
+    font-weight: bold;
+    justify-content: center;
+  }
+  @keyframes cursor {
+    from { border-color: #ffe509; }
+    to { border-color: transparent; }
+  }
+  
+  @media (max-width: 767.98px) {
+    .typewriter { font-size: 35px; }
+  }
+  @media (min-width: 768px) {
+    .typewriter { font-size: 60px; }
+  }
+
+
+
+
+
+
+
+
+/*corosuel*/
     body {
         font-family: "Open Sans", sans-serif;
     }
@@ -371,312 +430,48 @@ id="bootstrap-css">
     }
 
 
-    .how-section1{
-    margin-top:-15%;
-    padding: 10%;
-}
-.how-section1 h4{
-    color:yellowgreen;
-    font-weight: bold;
-    font-size: 30px;
-}
-.how-section1 .subheading{
-    color:turquoise;
-    font-size: 20px;
-}
-.how-section1 .row
-{
-    margin-top: 10%;
-}
-.how-img 
-{
-    text-align: center;
-}
-.how-img img{
-    width: 60%;
-}
-
-.back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
-}
-
-
-
-
-.grid {
-  position: relative;
-  margin: 0 auto;
-  padding: 1em 0 4em;
-  max-width: 1000px;
-  list-style: none;
-  text-align: center;
-}
-
-/* Common style */
-.grid figure {
-  position: relative;
-  float: left;
+/* Style the tab */
+.tab {
   overflow: hidden;
-  margin: 10px 1%;
-  min-width: 320px;
-  max-width: 480px;
-  max-height: 360px;
-  width: 48%;
-  background: #3085a3;
-  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
   cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
-.grid figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 0.8;
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
 }
 
-.grid figure figcaption {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-  pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption > a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-}
-
-.grid figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-}
-
-.grid figure h2 span {
-  font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-  margin: 0;
-}
-
-.grid figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
-}
-figure.effect-layla {
-  background: #18a367;
-}
-
-figure.effect-layla img {
-  height: 390px;
-}
-
-figure.effect-layla figcaption {
-  padding: 3em;
-}
-
-figure.effect-layla figcaption::before,
-figure.effect-layla figcaption::after {
-  position: absolute;
-  content: '';
-  opacity: 0;
-}
-
-figure.effect-layla figcaption::before {
-  top: 50px;
-  right: 30px;
-  bottom: 50px;
-  left: 30px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: scale(0,1);
-  transform: scale(0,1);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-}
-
-figure.effect-layla figcaption::after {
-  top: 30px;
-  right: 50px;
-  bottom: 30px;
-  left: 50px;
-  border-right: 1px solid #fff;
-  border-left: 1px solid #fff;
-  -webkit-transform: scale(1,0);
-  transform: scale(1,0);
-  -webkit-transform-origin: 100% 0;
-  transform-origin: 100% 0;
-}
-
-figure.effect-layla h2 {
-  padding-top: 26%;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-}
-
-figure.effect-layla p {
-  padding: 0.5em 2em;
-  text-transform: none;
-  opacity: 0;
-  -webkit-transform: translate3d(0,-10px,0);
-  transform: translate3d(0,-10px,0);
-}
-
-figure.effect-layla img,
-figure.effect-layla h2 {
-  -webkit-transform: translate3d(0,-30px,0);
-  transform: translate3d(0,-30px,0);
-}
-
-figure.effect-layla img,
-figure.effect-layla figcaption::before,
-figure.effect-layla figcaption::after,
-figure.effect-layla p {
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-layla:hover img {
-  opacity: 0.7;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-figure.effect-layla:hover figcaption::before,
-figure.effect-layla:hover figcaption::after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-figure.effect-layla:hover h2,
-figure.effect-layla:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-figure.effect-layla:hover figcaption::after,
-figure.effect-layla:hover h2,
-figure.effect-layla:hover p,
-figure.effect-layla:hover img {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
 
 
 
 
-.iframe-container{
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; 
-  height: 0;
-}
-.iframe-container iframe{
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
-.container {
-  max-width: 600px;
-  margin: auto;
-}
-.Flexible-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.Flexible-container iframe,   
-.Flexible-container object,
-.Flexible-container video, /* for html5 video embeds */
-.Flexible-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
-.bloghead{
-    justify-content: center;
-
-}
-	
-  
- 
-  
- 
-
-
-
-/**
- * Pen styles
- */
-html { box-sizing: border-box; height: 100%; overflow-y: scroll; font-size: 62.5%; }
-*, *:before, *:after { box-sizing: inherit; }
-body {
-	background: #fff;
-	color: #444;
-	font-family: 'Open Sans', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-	font-size: 1.8rem;
-	line-height: 1.2;
-}
-
-header {
-  width: 100%;
-  padding: 2em;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-}
-  
-
-main {
-  padding: 2rem 0;
-}
-
-article {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 1em 2em;
-}
-
-
-
+/*timeline*/
 
     </style>
 
@@ -742,10 +537,94 @@ article {
     </div>
 
 
+
+    <div class='container_type'>
+      <p class='typewriter'>Entreprenuership Cell IITI<br>books 
+      <span class='typewriter-text' data-text='[ "open minds.", "Increases Empathy.", " widen our consciousness." ]'></span>
+      </p>
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+
+typing( 0, $('.typewriter-text').data('text') );
+
+function typing( index, text ) {
+  
+  var textIndex = 1;
+
+  var tmp = setInterval(function() {
+    if ( textIndex < text[ index ].length + 1 ) {
+      $('.typewriter-text').text( text[ index ].substr( 0, textIndex ) );
+      textIndex++;
+    } else {
+      setTimeout(function() { deleting( index, text ) }, 2000);
+      clearInterval(tmp);
+    }
+
+  }, 150);
+
+}
+
+function deleting( index, text ) {
+
+  var textIndex = text[ index ].length;
+
+  var tmp = setInterval(function() {
+
+    if ( textIndex + 1 > 0 ) {
+      $('.typewriter-text').text( text[ index ].substr( 0, textIndex ) );
+      textIndex--;
+    } else {
+      index++;
+      if ( index == text.length ) { index = 0; }
+      typing( index, text );
+      clearInterval(tmp);
+    }
+
+  }, 150)
+
+}
+
+});
+    </script>
+
+<div class="row">
     <div class="Quote1">
         IDEATE. INNOVATE. INCUBATE.
+
+
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">⏏︎</button>
+
+        <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
+        
       </div>
-    
+      <div>
+        <img class="quote1img" src="/Photos/Screenshot 2021-07-20 at 9.56.38 PM.png" alt="">
+      </div>
+    </div>
     <div class="container-xl">
         <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -800,134 +679,137 @@ article {
     <br>
     <br>
 
-    <div class="how-section1" id="Books">
-        <div class="row">
-            <div class="col-md-6 how-img">
-                <img src="/Photos/6027a0c20f124c72cfc63406_Rich Dad Poor Dad.jpeg" class="rounded-circle img-fluid" alt=""/>
-            </div>
-            <div class="col-md-6">
-                <h4>Rich Dad Poor Dad</h4>
-                            <h4 class="subheading">Robert I. Kiyosaki</h4>
-            <p class="text-muted">When you are younger in age, financial education might not be as high as the older competition, which puts you in a place of vulnerability. Robert Kiyosaki’s book breaks down everything you need to know about financial education without giving you a headache.The book will shine a light on the 9-5 job and the rat race that keeps you in that job you hate in order to pay the debts. He teaches you how to make your entrepreneurial dreams come true by giving you the cold, hard truth about wealth – it’s not found by going to school, getting good grades, graduating with a diploma, and working for a secure company.
-
-            </p>
-            </div>
-        </div>
-        <div class="row">
-            
-            <div class="col-md-6">
-                <h4>The Lean StartUp</h4>
-                            <h4 class="subheading">Eric Ries</h4>
-                            <p class="text-muted">The games have changed; building a business is no longer about updating the business plan every other week according to Eric Ries.
-
-                                In his book, he goes over the various techniques an entrepreneur can use in order to create a business that will go against the odds and succeed. He takes on a more scientific and intuitive approach as to how to be a successful entrepreneur with a lasting business under your arm.</p>
-            </div>
-            <div class="col-md-6 how-img">
-                <img src="/Photos/lean startup.jpej.png" class="rounded-circle img-fluid" alt=""/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 how-img">
-                 <img src="/Photos/the entrepreneur mind.jpg" class="rounded-circle img-fluid" alt=""/>
-            </div>
-            <div class="col-md-6">
-                <h4>The Entrepreneur Mind</h4>
-                            <h4 class="subheading">
-                                Kevin D. Jhonson
-                                </h4>
-                            <p class="text-muted">Everything starts in the mind. If you have negative thoughts all day, it’s pretty certain that your day will not end on a good note.
-
-                                Kevin D. Johnson knows that and wants to help entrepreneurs around the world to change their mindset in order to be successful. In his book, The Entrepreneur Mind, Kevin D. Johnson talks about the different ways to change your way of thinking in order to start a business, make it grow, and make it last.</p>
-                                <button class="btn"><i class="fa fa-download"></i> Download</button>
-                            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h4>Rework</h4>
-                            <h4 class="subheading">Jason Fried & David Hansson</h4>
-                            <p class="text-muted">Compared to Alexander Osterwalder, David Hanson and Jason Fried want to approach the other type of entrepreneurs – the ones who want fast results and don’t really care or have the time to go through all the basic steps.
-
-                                The two authors team up together to crunch down the basics and create a whole new system that will make you act upon your dreams and goals faster.
-                                
-                                The book will motivate you to get up on your feet and move forward without planning the steps on a piece of paper before.</p>
-                                <button class="btn"><i class="fa fa-download"></i> Download</button>
-            </div>
-            <div class="col-md-6 how-img">
-                <img src="/Photos/Rework.jpeg" class="rounded-circle img-fluid" alt=""/>
-            </div>
-        </div>
-    </div>
+    
 
 
-<h1 id="bloghead">BLOGS</h1>
-<div class="grid" id="Blogs">
-  <figure class="effect-layla">
-    <img src="/Photos/jj-ying-7JX0-bfiuxQ-unsplash.jpg" alt="img06"/>
-    <figcaption>
-     <span>XYZ</span>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti eos ad eligendi nulla officiis illum error cum accusantium recusandae hic, consequuntur omnis dignissimos ex cupiditate excepturi quisquam a ducimus.</p>
-      <a href="#">View more</a>
-    </figcaption>     
-  </figure>
-  <figure class="effect-layla">
-    <img src="/Photos/jj-ying-7JX0-bfiuxQ-unsplash.jpg" alt="img03"/>
-    <figcaption>
-       <span>xyz</span>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident odit, dolore ab accusantium nam magnam atque cumque ullam enim? Doloribus hic possimus beatae repudiandae numquam sint odit exercitationem rem blanditiis!</p>
-      <a href="#">View more</a>
-    </figcaption>     
-  </figure>
-  <figure class="effect-layla">
-    <img src="/Photos/diego-ph-fIq0tET6llw-unsplash.jpg" alt="img06"/>
-    <figcaption>
-     <span>XYZ</span>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti eos ad eligendi nulla officiis illum error cum accusantium recusandae hic, consequuntur omnis dignissimos ex cupiditate excepturi quisquam a ducimus.</p>
-      <a href="#">View more</a>
-    </figcaption>     
-  </figure>
-  <figure class="effect-layla">
-    <img src="/Photos/jj-ying-7JX0-bfiuxQ-unsplash.jpg" alt="img03"/>
-    <figcaption>
-       <span>xyz</span>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident odit, dolore ab accusantium nam magnam atque cumque ullam enim? Doloribus hic possimus beatae repudiandae numquam sint odit exercitationem rem blanditiis!</p>
-      <a href="#">View more</a>
-    </figcaption>     
-  </figure>
-  
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
 </div>
 
-
-
-<header class="header" role="banner">
-    <h1>IDEATE. INNOVATE. INCUBATE.</h1>
-  </header>
-
-<div class="container">
-    <div class="row">
-    
-    <h1>Youtube</h1>
-    <div class='Flexible-container'>
-       <iframe width="500" height="315" src="https://www.youtube.com/embed/Ihs4VFZWwn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-
-    <h1>Youtube</h1>
-    <div class='Flexible-container'>
-       <iframe width="500" height="315" src="https://www.youtube.com/embed/Ihs4VFZWwn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-   
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
 </div>
-    <h1>Youtube</h1>
-    <div class='Flexible-container'>
-       <iframe width="500" height="315" src="https://www.youtube.com/embed/Ihs4VFZWwn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    
-    
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<section id="footer" class="footer">
+  <div class="footerBg"></div>
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+  <div class="contact-form btm-brdr">
+  <div class="form-Box">
+  <input type="text" placeholder="Name" class="b_effect" />
+   </div>
+  <div class="form-Box">
+  <input type="text" placeholder="Email" class="b_effect" />
   </div>
+  <div class="form-Box">                              <textarea placeholder="Message" class="b_effect"></textarea>
+  </div>
+  <div class="form-Box">
+  <input type="submit" value="Submit" class="fill-btn" />
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+  <div class="contact-address btm-brdr">
+  <h4 class="fTitle"> Contact <span>Us</span> </h4>
+  <ul>
+  <li> <i class="fa fa-phone" aria-hidden="true"></i> <span>1800 999 87 21</span> </li>
+  <li> <i class="fa fa-map-marker" aria-hidden="true"></i> <span>121 Abc St, Delhi VIC 5000, India</span> </li>
+  <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>info@scanfcode.com</span> 
+                                  </li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+  <div class="subscribe btm-brdr">
+  <h4 class="fTitle"> Subscribe <span>Newsletter</span> </h4>
+  <form>
+  <input type="text" placeholder="Example@example.com" />                                <button type="button" class="fill-btn">Subscribe</button>
+  </form>
+  </div>
+  <div class="social-icons">
+  <h4 class="fTitle"> Social <span>News</span> </h4>
+  <ul>
+  <li>
+  <a href="'#" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
+  <li> <a href="'#" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
+  <li><a href="'#" target="_blank"> <i class="fa fa-youtube-play" aria-hidden="true"></i> </a></li>
+  <li><a href="'#" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!-- footer Section Ends -->
+  <!-- copyright Section Begins -->
+  <section id="copyright" class="copyright">
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <h6> © 2017 This theme is powered by <a href="http://scanfcode.com" target="_blank">Scanfcode.</a> </h6>
+  </div>
+  </div>
+  </div>
+  </section>
 
 
-  
-  
+
+
+
+<script>
+ function myFunction() {
+var x = document.getElementById("centered_nav");
+if (x.className === "rc_nav") {
+  x.className += " responsive";
+} else {
+  x.className = "rc_nav";
+}
+}
+</script>
+
+
+
+
+
 
 
     <script>
