@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-
++0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="/Boolstrap/vendors/fonts/bootstrap-icons.woff">
+  <link rel="stylesheet" href="/Boolstrap/vendors/fonts/bootstrap-icons.woff2">
+  <link rel="stylesheet" href="/Boolstrap/vendors/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="/Boolstrap/vendors/icons/bootstrap-icons.json">
+
+<style>
+   /*background for navbar top*/
+.container_type {
+    display: flex;
+    align-items: center;
+   background-image: url(/Photos/cropped\ blur\ diaries.png);
+   background-repeat: no-repeat;
+   background-size:100% 600px;    
+    width: 100%;
+    height: 400px;
+  }
+  
+  .typewriter {
+    font-family: sans-serif;
+    color: #fff;
+   justify-content: center;
+    display: block;
+    
+  }
+  .typewriter-text {
+    padding-right: 10px;
+    color: rgb(29, 168, 223);
+    border-right: solid rgb(28, 166, 221) 7px;
+    text-transform: uppercase;
+    animation: cursor 1s ease-in-out infinite;
+    font-weight: bold;
+    justify-content: center;
+  }
+  @keyframes cursor {
+    from { border-color: #ffe509; }
+    to { border-color: transparent; }
+  }
+  
+  @media (max-width: 767.98px) {
+    .typewriter { font-size: 35px; }
+  }
+  @media (min-width: 768px) {
+    .typewriter { font-size: 60px; }
+  }
+
+
+</style>
+</head>
+
+
+<body>
+
+
+
+    <div class='container_type'>
+        <p class='typewriter'>Entreprenuership Cell IITI<br>Entrepreneurs have 
+        <span class='typewriter-text' data-text='[ "Resolute motivation and passion.", "Self-discipline.", " Risk-taking ability." ,"Creative thinking"]'></span>
+        </p>
+      </div>
+      
+      <script>
+          $(document).ready(function() {
+  
+  typing( 0, $('.typewriter-text').data('text') );
+
+  function typing( index, text ) {
+    
+    var textIndex = 1;
+
+    var tmp = setInterval(function() {
+      if ( textIndex < text[ index ].length + 1 ) {
+        $('.typewriter-text').text( text[ index ].substr( 0, textIndex ) );
+        textIndex++;
+      } else {
+        setTimeout(function() { deleting( index, text ) }, 2000);
+        clearInterval(tmp);
+      }
+
+    }, 150);
+
+  }
+
+  function deleting( index, text ) {
+
+    var textIndex = text[ index ].length;
+
+    var tmp = setInterval(function() {
+
+      if ( textIndex + 1 > 0 ) {
+        $('.typewriter-text').text( text[ index ].substr( 0, textIndex ) );
+        textIndex--;
+      } else {
+        index++;
+        if ( index == text.length ) { index = 0; }
+        typing( index, text );
+        clearInterval(tmp);
+      }
+
+    }, 150)
+
+  }
+
+});
+      </script>
+
+
+
+<div id="rc_logo">
+    <a href="#home" title="Logo">ECELL IITI</a> <!-- Swap this placeholder out for your logo image -->
+    </div>  
+
+    
+    <div class="rc_nav" id="centered_nav">
+    <a href="#home" title="Home">Home</a>
+    <a href="#services" title="Services">Books</a>
+    <a href="#about" title="About">Blogs</a>
+    <a href="#contact" title="Contact">Videos</a>
+    <a href="#contact" title="Contact">Entreprenuer Diaries</a>
+    <a href="#contact" title="Contact">Contact Us</a>
+    <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+        
+        <div class="rc_content">
+          <h3>Inspire by those who perspired</h3>
+          <p></p>
+        </div>
+        
+
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">⏏︎</button>
+
+        <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+
+
+        <section class="dark">
+            <div class="container py-4">
+                <h1 class="h1 text-center" id="pageHeaderTitle"></h1>
+        
+                <article class="postcard dark blue">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="/photos/dairies-narayan murthy.jpeg" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text">
+                        <h1 class="postcard__title blue"><a href="#">Narayan Murthi</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Founder of Infosys
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Organisations with decision-making speed &amp; imagination will thrive as
+                            nobody can claim to have a monopoly over creativity. – N. R. Narayana
+                            Murthy<br>
+                            Narayana Murthy is the co-founder of Infosys, a multinational corporation
+                            that provides services pertaining to technology, engineering, consulting and
+                            outsourcing. Mr. Murthy founded Infosys in 1981.
+                            Narayana Murthy did not grow up with the most favourable circumstances
+                            but that didnt hold him back from achieving phenomenal success.
+                            In 1981, after quitting his job as a General Manager at Patni Computer
+                            Systems in Pune, and borrowing Rs 10,000 from his wife, Murthy started
+                            Infosys.
+                            In a span of only four years, the company grew into a tech giant and
+                            employed over 2 lakh people, while also making Bangalore the IT hub of
+                            India.
+                            Apart from his towering contributions to the Indian economy through his
+                            company, Narayana Murthy also made significant benefactions to the IT
+                            world. He is now recognised as “the father of the IT sector”.</div>
+                            
+                    </div>
+                </article>
+                <article class="postcard dark red">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="/Photos/ritesh agarwal img.jpeg" alt="Image Title" />	
+                    </a>
+                    <div class="postcard__text">
+                        <h1 class="postcard__title red"><a href="#">Ritesh Agarwal</a></h1>
+                        <div class="postcard__subtitle small">
+                            
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">He is the founder and CEO of disruptive hospitality business and app - Oyo Rooms - a network of 2,200 hotels operating in 154 cities across India - with monthly revenues of $3.5m and 1,500 employees. It also features among the companies which are tipped to become the next start-up unicorns according to CB Insights research's findings, published in The New York Times. It has raised a total of $125million of funding in 4 rounds from 7 investors. Agarwal has won many awards and accolades for his work including the Business World Young Entrepreneur Award.</div>
+                        
+                    </div>
+                </article>
+                <article class="postcard dark green">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="/photos/diaries-laxmi mittal.jpeg" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text">
+                        <h1 class="postcard__title green"><a href="#">Lakshmi Mittal</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Executive Chairman of ArcelorMittal<br>
+                                Chairman of stainless-steel manufacture Aperam
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Lakshmi Mittal serves as chairman of $53.3 billion (revenue) ArcelorMittal,
+                            the world&#39;s largest steel and mining company by output. Since 2008, Mittal
+                            was a member of the board of directors of Goldman Sachs. He sits on the
+                            World Steel Association’s exclusive committee.
+                            Lakshmi Mittal first learned about business from his father, Mohan Lal
+                            Mittal. After graduation, Mittal worked for the family firm for a while, and
+                            then struck out on his own in 1976 when he founded a steel plant in
+                            Indonesia. Calling his steel company Arcelor Mittal, he ran this business
+                            successfully throughout the 1980s, and in 1995 Mittal made a full
+                            separation of his own steel business from the family&#39;s corporate holdings in
+                            India. Soon afterward, Mittal settled in London, where he still resides to this
+                            day. Mittal, an accountants with a global vision and practically endless
+                            determination to succeed, overcame obstacles and prevailed in
+                            consolidating the extensively divided steel industry.  At 71 (2021) years of
+                            age, Mittal could certainly be considered the Andrew Carnegie of the new
+                            millennium.</div>
+                     
+                    </div>
+                </article>
+                <article class="postcard dark yellow">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="/photos/diaries-radhakishan.jpeg" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text">
+                        <h1 class="postcard__title yellow"><a href="#">Radhakishan Damani</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>DMart founder and owner
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Radha Kishan Damani, is India’s 11th richest person, an entrepreneur, a
+                            stock Market investor and the owner of D-mart. Just a 12th pass man, he
+                            built an empire of $10bn.
+                            Born in Bikaner, Rajasthan in a Marwari family in 1960, Damani’s father ran
+                            a small business. His untimely death led him to start a small business of
+                            ball bearings, despite having no practical knowledge of business and stock
+                            market. He just scrutinized and reviewed the stock market in his initial days
+                            and learned ample valuable lessons. He made a profit by trading and
+                            investing in MNC companies and began investing in the stock market at the
+                            age of 32.
+                            Radha Kishan is inspired by a value investor named Chandra Kant
+                            Sampat. He followed the strategy of value investing and long term investing
+                            from Mr. Sampat. He used to purchase the stocks at a lower price, keep it
+                            for longer periods and then sell it. He became the biggest individual
+                            shareholder of HDFC in the year 1995.
+                            Damani has exemplified that determination, passion, farsightedness,
+                            confidence, and knowledge can beat all the qualifications of the world.</div>
+                       
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section class="light">
+            <div class="container py-2">
+                <div class="h1 text-center text-dark" id="pageHeaderTitle"></div>
+        
+                <article class="postcard light blue">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="/photos/diaries-indra nooyi.jpeg" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title blue"><a href="#">Indra Nooyi</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Chairman of PepsiCo
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">The lady with a fizz, Indra Krishnamurthy Nooyi was the chairman and CEO
+                            of PepsiCo, the world&#39;s fourth-largest food and Beverage Company for 12
+                            Years. Indra Nooyi has stepped down after 12 years as CEO, President
+                            Ramon Laguarta to succeed her. An Indian-born American executive,
+                            Nooyi was ranked No.4 on Forbes magazine&#39;s annual survey of the 100
+                            most powerful women in the world. Prior to becoming CEO she was the
+                            President, Chief Financial Officer and a member of the Board of Directors
+                            of PepsiCo Inc. Now She is serving as Board of Director of Amazon. She
+                            has also been awarded  Padma Bhushan, CNN-IBN Indian of the Year
+                            Global Indian.</div>
+                      
+                    </div>
+                </article>
+                <article class="postcard light red">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="/photos/diaries- deep karla.jpeg" alt="Image Title" />	
+                    </a>
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title red"><a href="#">Deep Kalra</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>founder and group CEO of MakeMyTrip
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Deep Kalra obtained his bachelor’s degree from St. Stephen’s College,
+                            Delhi and his Master of Business Administration degree (MBA) degree
+                            from IIM Ahmedabad.
+                            He went on to work for companies like ABN AMRO Bank, GE Capital, At
+                            GE Money etc. Three years at the bank, Deep Kalra took a huge risk by
+                            quitting the good paying and stable job at ABN Bank and deciding to turn
+                            an entrepreneur. He brought the AMF Bowling – an American company
+                            that was hoping to enter the Indian market to start the 10-pin bowling
+                            revolution in the country. However, the venture failed, and he went back to
+                            a boring and regular private job. He thinks that failure in his case helped
+                            him a lot to keep going. Hence, with a backing of e-Ventures and along
+                            with co-founders, Deep began his new Entrepreneurial journey with an
+                            online travel company, MakeMyTrip after realizing the possibilities of the
+                            internet. MakeMyTrip is now the largest Indian online travel company which
+                            provides online travel services like hotel reservations, Air tickets, domestic
+                            and international holiday packages, Cab Booking, train booking and bus
+                            tickets, etc.</div>
+                       
+                    </div>
+                </article>
+                <article class="postcard light green">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="/photos/diaries-hari menon.jpeg" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title green"><a href="#">Hari Menon</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Big Basket CEO & Co-Founder
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Hari Menon was born in 1996 in Bandra West, Mumbai into a middle-class
+                            family. Hari is the CEO and Co-Founder of BigBasket, India’s largest
+                            supermarket. He is also a Founder of Symphony Industrial AI. Before
+                            founding Big Basket, Hari served as the CEO for various companies
+                            including Tumri, Serus Corporation, and Timeli.
+                            In 1999, Hari along with five of his friends, the founding team of BigBasket
+                            had cofounded Fabmart, an online platform, which performed the same
+                            functions that Amazon, Flipkart does today and was one of the pioneers in
+                            e-commerce in India.
+                            During the first year of his online platform, there were no transactions but
+                            only noise, as it could not generate enough revenue.
+                            After the failure of Fabmart they launched Fabmall, a physical version of
+                            Fabmart and India’s first integrated online-to-offline retail company, a
+                            venture which took off. Around the same time, Hari Menon decided to sell-
+                            off the business to Aditya Birla Group. After the success of Fabmart, Hari
+                            Menon, Vipul Parekh, V S Sudhakar, Abhinay Choudhari, and V S Ramesh
+                            founded Bigbasket in October 2011.
+                            Hari Menon is one of those Indian entrepreneurs, who struggle a lot in their
+                            initial life, entrepreneurial journey, and then step onto the market with a
+                            unique business idea and get success by his pivotal efforts.</div>
+                  
+                    </div>
+                </article>
+                <article class="postcard light yellow">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="/photos/diaries-azim premji.jpeg" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title yellow"><a href="#">Azim Premji</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Chairman of Wipro Limited
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Indian entrepreneur Azim Premji turned a small, family-owned cooking-oil
+                            company into Wipro Limited, a multinational conglomerate focused on
+                            providing technology outsourcing services, that many have compared to
+                            Microsoft. In 1980, Premji seized the opportunity to transform Wipro into an
+                            IT company when IBM withdrew its business from India. Premji is
+                            sometimes referred to as India&#39;s Bill Gates as a result, alongside his
+                            informal title as &quot;czar&quot; of the Indian IT industry.
+                            In 2010, he was voted among the 20 most powerful men in the world
+                            by Asiaweek. He has twice been listed among the 100 most influential
+                            people by Time magazine, once in 2004 and more recently in 2011. For
+                            years, he has been regularly listed one among the 500 Most Influential
+                            Muslims.</div>
+                   
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="footer" class="footer">
+            <div class="footerBg"></div>
+            <div class="container">
+            <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="contact-form btm-brdr">
+            <div class="form-Box">
+            <input type="text" placeholder="Name" class="b_effect" />
+             </div>
+            <div class="form-Box">
+            <input type="text" placeholder="Email" class="b_effect" />
+            </div>
+            <div class="form-Box">                              <textarea placeholder="Message" class="b_effect"></textarea>
+            </div>
+            <div class="form-Box">
+            <input type="submit" value="Submit" class="fill-btn" />
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="contact-address btm-brdr">
+            <h4 class="fTitle"> Contact <span>Us</span> </h4>
+            <ul>
+            <li> <i class="fa fa-phone" aria-hidden="true"></i> <span>Vishwas Raj :+91-6387891938<br>
+                Sudeep Patra :+91-9587637471</span> </li>
+            <li> <i class="fa fa-map-marker" aria-hidden="true"></i> <span>Room 302-B, PHY-1, Academic POD, IIT Indore, Madhya Pradesh-452020</span> </li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>ecell@iiti.ac.in</span> 
+                                            </li>
+            </ul>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="subscribe btm-brdr">
+            <h4 class="fTitle"> Subscribe <span>Us</span> </h4>
+            <form>
+            <input type="text" placeholder="Example@example.com" />                                <button type="button" class="fill-btn">Subscribe</button>
+            </form>
+            </div>
+            <div class="social-icons">
+            <h4 class="fTitle"> Social <span>Media</span> </h4>
+            <ul>
+            <li>
+            <a href="https://www.facebook.com/sesciiti/" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
+            <li> <a href="https://twitter.com/sesciiti" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
+            <li><a href="https://in.linkedin.com/company/sesc-iiti" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+            <li><a href="https://www.instagram.com/ecell.iiti/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            <!-- footer Section Ends -->
+            <!-- copyright Section Begins -->
+            <section id="copyright" class="copyright">
+            <div class="container">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h6> Copyright ©E-Cell IIT Indore 2021| All Rights Reserved| Developed with ❤ by the team <a href="http://scanfcode.com" target="_blank"></a> </h6>
+            </div>
+            </div>
+            </div>
+            </section>
+
+</body>
+</html>

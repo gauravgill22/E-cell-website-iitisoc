@@ -1,0 +1,1015 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-
++0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="/Boolstrap/vendors/fonts/bootstrap-icons.woff">
+  <link rel="stylesheet" href="/Boolstrap/vendors/fonts/bootstrap-icons.woff2">
+  <link rel="stylesheet" href="/Boolstrap/vendors/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="/Boolstrap/vendors/icons/bootstrap-icons.json">
+
+
+  <style>
+
+
+/*background for navbar top*/
+.container_type {
+    display: flex;
+    align-items: center;
+   background-image: url(/Photos/blur\ videos.png);
+   background-repeat: no-repeat;
+   background-size: 100% 400px; 
+    width: 100%;
+    height: 400px;
+  }
+  
+  .typewriter {
+    font-family: sans-serif;
+    color: #fff;
+   justify-content: center;
+    display: block;
+    
+  }
+  .typewriter-text {
+    padding-right: 10px;
+    color: rgb(29, 168, 223);
+    border-right: solid rgb(28, 166, 221) 7px;
+    text-transform: uppercase;
+    animation: cursor 1s ease-in-out infinite;
+    font-weight: bold;
+    justify-content: center;
+  }
+  @keyframes cursor {
+    from { border-color: #ffe509; }
+    to { border-color: transparent; }
+  }
+  
+  @media (max-width: 767.98px) {
+    .typewriter { font-size: 35px; }
+  }
+  @media (min-width: 768px) {
+    .typewriter { font-size: 60px; }
+  }
+
+
+
+
+/* video gallary*/
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 70px;
+  margin-bottom: 30px;
+  font: 300 60px 'Lato', sans-serif;
+  letter-spacing: 3px;
+  color: #222;
+}
+
+.section-header-underline {
+  border: 1px solid #222;
+  width: 15rem;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.video-gallery {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.video-gallery figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	
+	max-width: 300px;
+	max-height: 200px;
+	
+  
+	background: #000;
+	text-align: center;
+	cursor: pointer;
+}
+
+.video-gallery figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.video-gallery figure figcaption {
+	padding: 2px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 8px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.video-gallery figure figcaption::before,
+.video-gallery figure figcaption::after {
+	pointer-events: none;
+}
+
+.video-gallery figure figcaption,
+.video-gallery figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.video-gallery figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.video-gallery figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.video-gallery figure h2 span {
+	font-weight: 800;
+}
+
+.video-gallery figure h2,
+.video-gallery figure p {
+	margin: 0;
+}
+
+.video-gallery figure p {
+	letter-spacing: 1px;
+	font-size: 8px;
+}
+
+/* Individual effects */
+
+
+/*----------------------*/
+/***** gallery-item *****/
+/*----------------------*/
+
+figure.gallery-item {
+	background: #000;
+}
+
+figure.gallery-item img {
+	max-width: none;
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% +20px );
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.gallery-item:hover img {
+	opacity: 0.4;
+	
+}
+
+figure.gallery-item figcaption {
+	text-align: left;
+}
+
+figure.gallery-item h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+figure.gallery-item h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.gallery-item:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.gallery-item p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.gallery-item:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+@media screen and (max-width: 50em) {
+	.video-gallery figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
+
+
+
+
+/*tabs for vid gallary*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css');
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#tsum-tabs h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+#tsum-tabs p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+#tsum-tabs main {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+#tsum-tabs section {
+  display: none;
+  min-height: 1000px;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+#tsum-tabs input {
+  display: none;
+}
+
+#tsum-tabs label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+#tsum-tabs label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+#tsum-tabs label[for*='1']:before { content: '\f1cb'; }
+#tsum-tabs label[for*='2']:before { content: '\f17d'; }
+#tsum-tabs label[for*='3']:before { content: '\f16b'; }
+#tsum-tabs label[for*='4']:before { content: '\f1a9'; }
+
+#tsum-tabs label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+#tsum-tabs input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid #00e1ff;
+  border-bottom: 1px solid #fff;
+}
+
+#tsum-tabs #tab1:checked ~ #content1,
+#tsum-tabs #tab2:checked ~ #content2,
+#tsum-tabs #tab3:checked ~ #content3,
+#tsum-tabs #tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  #tsum-tabs label {
+    font-size: 18;
+  }
+  #tsum-tabs label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #tsum-tabs label {
+    padding: 15px;
+  }
+}
+
+
+
+/*Quote*/
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+
+
+
+
+	
+  
+</style>
+</head>
+
+
+<body>
+
+
+    <div class='container_type'>
+        <p class='typewriter'>Entreprenuership Cell IITI<br> 
+        <span class='typewriter-text' data-text='[ "Knowledge is power,", "Power is wisdom,", "and wisdom is understanding." ]'></span>
+        </p>
+      </div>
+      
+      <script>
+          $(document).ready(function() {
+  
+  typing( 0, $('.typewriter-text').data('text') );
+
+  function typing( index, text ) {
+    
+    var textIndex = 1;
+
+    var tmp = setInterval(function() {
+      if ( textIndex < text[ index ].length + 1 ) {
+        $('.typewriter-text').text( text[ index ].substr( 0, textIndex ) );
+        textIndex++;
+      } else {
+        setTimeout(function() { deleting( index, text ) }, 2000);
+        clearInterval(tmp);
+      }
+
+    }, 150);
+
+  }
+
+  function deleting( index, text ) {
+
+    var textIndex = text[ index ].length;
+
+    var tmp = setInterval(function() {
+
+      if ( textIndex + 1 > 0 ) {
+        $('.typewriter-text').text( text[ index ].substr( 0, textIndex ) );
+        textIndex--;
+      } else {
+        index++;
+        if ( index == text.length ) { index = 0; }
+        typing( index, text );
+        clearInterval(tmp);
+      }
+
+    }, 150)
+
+  }
+
+});
+      </script>
+
+
+
+
+<div id="rc_logo">
+    <a href="#home" title="Logo">ECELL IITI</a> <!-- Swap this placeholder out for your logo image -->
+    </div>  
+
+    
+    <div class="rc_nav" id="centered_nav">
+    <a href="#home" title="Home">Home</a>
+    <a href="" title="Services">Books</a>
+    <a href="#about" title="About">Blogs</a>
+    <a href="#contact" title="Contact">Videos</a>
+    <a href="#contact" title="Contact">Entreprenuer Diaries</a>
+    <a href="#contact" title="Contact">Contact Us</a>
+    <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+        
+        
+        
+        
+
+      
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">⏏︎</button>
+
+        <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
+          
+          
+            
+         
+            
+                             
+                             
+                     
+
+
+
+
+
+
+
+<div id="tsum-tabs">
+  
+    <h1>Get Master Guidance from Master Minds</h1>
+  <main>
+    
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1">Innovation</label>
+      
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2">Design</label>
+      
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3">Startups</label>
+      
+    <input id="tab4" type="radio" name="tabs">
+    <label for="tab4">Marketing</label>
+      
+    <section id="content1">
+      <p>
+        Innovation and Design
+      </p>
+      <div class="content">
+
+        <div class="video-gallery"> 
+             <figure class="gallery-item"> 
+               <img src="https://i.ytimg.com/vi/fxbCHn6gE3U/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLAKZ14BJtGsL3i42hGvHCPGNJO4AA" alt="Editor Reel"/>
+               <figcaption>
+                 <div>
+                   <h2>  <span> </span></h2>
+                   <p> The single biggest reason why start-ups succeed | Bill Gross</p>
+                 </div> 
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=bNpx7gpSqbY" >View more</a>
+               </figcaption>			
+             </figure>
+                     
+                     
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/rWv-KoZnpKw/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLAwsWKpetONrPe7I_sWv--mKZtwuQ" alt="True Facet"/>
+               <figcaption>
+                 <div>
+                   <h2> <span></span></h2>
+                   <p>The art of innovation | Guy Kawasaki | TEDxBerkeley</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=Mtjatz9r-Vc">View more</a>
+               </figcaption>			              
+             </figure>
+                
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/C27RVio2rOs/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLBWEypTeDSzdSFyPHrl3vUkK6_GgA" alt="Dirty Rotten Survival"/>
+               <figcaption>
+                 <div>
+                   <h2> <span></span></h2>
+                   <p>The Role of Business Leaders in the Age of Climate Change</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=gOa-4nbtJy0">View more</a>
+               </figcaption>			
+             </figure>
+              
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/bRtBHF-WPpM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLD6i-3IPK-LfnNzwKwWiowPVgIydg" alt="Amazing Wedding Cakes"/>
+               <figcaption>
+                 <div>
+                   <h2> <span> </span></h2>
+                   <p>2 questions to uncover your passion and turn it into a career | Noeline Kirabo</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=y3emv9DIEkE">View more</a>
+               </figcaption>			
+             </figure>
+                     
+                     
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/qYvXk_bqlBk/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLBrNt_i26PI9lFVOMRDkc6hm65C_w" alt="Sober Trailer"/>
+               <figcaption>
+                 <div>
+                   <h2><span></span></h2>
+                   <p>Why some of us don't have one true calling | Emilie Wapnick</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=4sZdcB6bjI8">View more</a>
+               </figcaption>			
+             </figure>     
+                
+                     
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/k0CthZZQXpE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLBa0PoMvtkP3TaKicI8rpxxBDxYw" alt="Bait Car"/>
+               <figcaption>
+                 <div>
+                   <h2> <span></span></h2>
+                   <p>5 most Innovative Indian Startups | new startup ideas | 2021</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=-6ShAHiPItU">View more</a>
+               </figcaption>			
+             </figure>     
+                
+                     
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/fxbCHn6gE3U/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLAKZ14BJtGsL3i42hGvHCPGNJO4AA" alt="FarmersChile.com"/>
+               <figcaption>
+                 <div>
+                   <h2> <span></span></h2>
+                   <p>4 lessons the pandemic taught us about work, life and balance | Patty McCord</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=yuy9yQlFZAU">View more</a>
+               </figcaption>			
+             </figure>      
+                   
+                     
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/C27RVio2rOs/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLBWEypTeDSzdSFyPHrl3vUkK6_GgA" alt="Sober Scene One"/>
+               <figcaption>
+                 <div>
+                   <h2> <span></span></h2>
+                   <p>Climate Change and Opportunities for Business</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=iQpNiVDa5e4">View more</a>
+               </figcaption>			
+             </figure> 
+ 
+  </div>
+  </div>
+    </section>
+      
+    <section id="content2">
+      <p>
+         How designing matters?
+      </p>
+      <div class="content">
+
+        <div class="video-gallery"> 
+             
+                
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/_4VPfmtwRac/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLCA-SunxVvwyOBHc-xNKwvM_PmYyQ" alt="Dirty Rotten Survival"/>
+               <figcaption>
+                 <div>
+                   <h2><span> </span></h2>
+                   <p>What Is Design Thinking? An Overview</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=gHGN6hs2gZY">View more</a>
+               </figcaption>			
+             </figure>
+              
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/QoqohmccTSc/hqdefault_1110266.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLC0WMrMYUv0S63B_O2HrY77XBc6HA" alt="Amazing Wedding Cakes"/>
+               <figcaption>
+                 <div>
+                   <h2> <span></span></h2>
+                   <p>50 Entrepreneurs share priceless advice</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=QoqohmccTSc">View more</a>
+               </figcaption>			
+             </figure>
+                     
+                     
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/Ur037LYsb8M/hqdefault_3388000.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLBSOfDxl-bzhCn6Nv5LQLJGkBGS1w" alt="Sober Trailer"/>
+               <figcaption>
+                 <div>
+                   <h2><span></span></h2>
+                   <p>Bitcoin Design Principles - IDEO Lab presentation by Andreas M. Antonopoulos</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=Ur037LYsb8M">View more</a>
+               </figcaption>			
+             </figure>     
+                
+                     
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/XRd6Ddn4ZSY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLCC7kkHfqM_lRQJOT-z7zwq_nAA_w" alt="Bait Car"/>
+               <figcaption>
+                 <div>
+                   <h2> <span></span></h2>
+                   <p>A User Guide to Product Design by Director of UX at Google</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=8O37aTQqBfw">View more</a>
+               </figcaption>			
+             </figure>     
+                
+                     
+             <figure class="gallery-item">
+               <img src="https://i.ytimg.com/vi/kl2Flp4oK-g/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLD2-rOMeSiNJUtXHofq9d8s9EFD" alt="FarmersChile.com"/>
+               <figcaption>
+                 <div>
+                   <h2> <span></span></h2>
+                   <p>Take A Video Tour of Apple's Design Studio</p>
+                 </div>
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=vyHzyVJmD-M">View more</a>
+               </figcaption>			
+             </figure>      
+                   
+                     
+    </div>
+  </div>
+  
+    </section>
+      
+
+
+    <section id="content3">
+      <p>
+         How startup are done?
+      </p>
+      <div class="content">
+
+        <div class="video-gallery"> 
+             <figure class="gallery-item"> 
+               <img src="https://i.ytimg.com/vi/uT_GcOGEFsk/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLD6Ez5QdqYCwog3A94Aq-sA0P22ow" alt="Editor Reel"/>
+               <figcaption>
+                 <div>
+                   <h2>  <span> </span></h2>
+                   <p> 7 tools for building a business people trust | Marcos Aguiar</p>
+                 </div> 
+                 <a class="vimeo-popup" href="https://www.youtube.com/watch?v=lJUrQKY_A5g" >View more</a>
+               </figcaption>			
+             </figure>
+
+             <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/W608u6sBFpo/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLAiDq8tOs6Z6aYByQlD-8qXDyPTmw" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> The real story about how Airbnb was founded - Nathan Blecharczyk Co-founder Airbnb - Startup Success</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=M6GBqqk2mY4" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/zIwLWfaAg-8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLAVk6Bxl6dGNsEycbYzd2deROLFQg" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p>Elon Musk on Millennials and How To Start A Business </p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=ARoGZIN5oC4" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/kkeuCTfjBPg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLCraBTFQihoUCa2QBZOLOdbPR1zXA" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> Startups vs Small Business: what's the difference?</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=k26DOtwPN7s" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/fxbCHn6gE3U/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLAKZ14BJtGsL3i42hGvHCPGNJO4AA" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> How cryptocurrency can help start-ups get investment capital | Ashwini Anburajan</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=IFpK-MqBD5E" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/JqxzLUE6pP8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLBdIpV3SjfHvGusUOU9AsL_0nMYRw" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> How Did Uber Start? The Birth of Travis Kalanick & Garrett Camp's Uber</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=wDgCNCd7KzY" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/xbYprCoLsvY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLBP3Ynz7Fsnn4Zj-65xBMmnhWKm2w" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> Whatsapp founder Jan Koum talks about their Journey</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=X4YsJt4rIOI" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/0JBOSmRo8js/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLALk60g82UfLtiIwHfBK6BfSufC0A" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> How to Be a Great Founder with Reid Hoffman (How to Start a Startup 2014: Lecture 13)</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=pkAum45ubWc" >View more</a>
+                </figcaption>			
+              </figure>
+                     
+                     
+             
+ 
+  </div>
+  </div>
+    
+    </section>
+      
+    <section id="content4">
+      <p>
+         Marketing is key for success 
+      </p>
+      <div class="content">
+
+        <div class="video-gallery"> 
+
+            <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/rN0HrbDDmZ8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLB6filCmCr6rNbRZoZIghTcnPEO9A" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> Apple's Award Winning Marketing Strategy ║ Brand Marketing ║</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=tFffkU_DwvI" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/89Vpqm2IaPE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLBWKS4maPSEVfEY2ZrT7G2z49CJEg" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> How to Sell A Product - Sell Anything to Anyone with The 4 P's Method</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=UCo3Z-y72Kg" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/Tuw8hxrFBH8/hqdefault.jpg?sqp=-oaymwEbCKg8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLDd29oZm2Aly_RuV6Y1AlDlgfjPmg" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> Best marketing strategy ever! Steve Jobs Think different</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=keCwRdbwNQY" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/iWuYUhSHXHg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLBPupyU13KdWIEXv9dStP1kceblMQ" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> The Secret Behind Coca-Cola Marketing Strategy</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=XhMVWzVXNNk" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/UEtE-el6KKs/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLCaT1Fk5NcAWK7uWk4VOjQIo6fyAQ" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p>Halo Effect - Nike Marketing Strategy </p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=UU0CHeLbvdA" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/xsVTqzratPs/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLAZX3C8xUYxq4GXrU7qZsiF3tO64w" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> How to Start Social Media Marketing (4 ESSENTIAL Tips for Beginners)</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=-tdFvJLw2UQ" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/sR-qL7QdVZQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLBa9uYdPQSzACEIKKpWQCfUJR5Kzw" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p> Philip Kotler: Marketing Strategy</p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=bilOOPuAvTY" >View more</a>
+                </figcaption>			
+              </figure>
+
+              <figure class="gallery-item"> 
+                <img src="https://i.ytimg.com/vi/9qZcT9I8W4g/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLCbN6yFmLn6P35pp-D1JruDTM3TRg" alt="Editor Reel"/>
+                <figcaption>
+                  <div>
+                    <h2>  <span> </span></h2>
+                    <p>The Ultimate Content Marketing Strategy for 2021 </p>
+                  </div> 
+                  <a class="vimeo-popup" href="https://www.youtube.com/watch?v=b5-GZwJgdrY" >View more</a>
+                </figcaption>			
+              </figure>
+             
+  </div>
+  </div>
+    
+    </section>
+      
+  </main>
+  </div>
+
+<script>
+                   $(document).ready(function() {
+          $('.video-gallery').magnificPopup({
+          delegate: 'a', // child items selector, by clicking on it popup will open
+          type: 'iframe',
+          // other options
+             gallery:{
+            enabled:true
+          }
+        });
+        });
+                 </script>     
+                  
+    <script>
+      function myFunction() {
+    var x = document.getElementById("centered_nav");
+    if (x.className === "rc_nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "rc_nav";
+    }
+}
+    </script>
+
+
+
+
+
+
+ <!-- footer Section Begins -->
+ <section id="footer" class="footer">
+    <div class="footerBg"></div>
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class="contact-form btm-brdr">
+    <div class="form-Box">
+    <input type="text" placeholder="Name" class="b_effect" />
+     </div>
+    <div class="form-Box">
+    <input type="text" placeholder="Email" class="b_effect" />
+    </div>
+    <div class="form-Box">                              <textarea placeholder="Message" class="b_effect"></textarea>
+    </div>
+    <div class="form-Box">
+    <input type="submit" value="Submit" class="fill-btn" />
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class="contact-address btm-brdr">
+    <h4 class="fTitle"> Contact <span>Us</span> </h4>
+    <ul>
+    <li> <i class="fa fa-phone" aria-hidden="true"></i> <span>Vishwas Raj :+91-6387891938<br>
+        Sudeep Patra :+91-9587637471</span> </li>
+    <li> <i class="fa fa-map-marker" aria-hidden="true"></i> <span>Room 302-B, PHY-1, Academic POD, IIT Indore, Madhya Pradesh-452020</span> </li>
+    <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>ecell@iiti.ac.in</span> 
+                                    </li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class="subscribe btm-brdr">
+    <h4 class="fTitle"> Subscribe <span>Us</span> </h4>
+    <form>
+    <input type="text" placeholder="Example@example.com" />                                <button type="button" class="fill-btn">Subscribe</button>
+    </form>
+    </div>
+    <div class="social-icons">
+    <h4 class="fTitle"> Social <span>Media</span> </h4>
+    <ul>
+    <li>
+    <a href="https://www.facebook.com/sesciiti/" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
+    <li> <a href="https://twitter.com/sesciiti" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
+    <li><a href="https://in.linkedin.com/company/sesc-iiti" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+    <li><a href="https://www.instagram.com/ecell.iiti/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- footer Section Ends -->
+    <!-- copyright Section Begins -->
+    <section id="copyright" class="copyright">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h6> Copyright ©E-Cell IIT Indore 2021| All Rights Reserved| Developed with ❤ by the team <a href="http://scanfcode.com" target="_blank"></a> </h6>
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+</body>
+</html>
