@@ -6,7 +6,10 @@
 
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="recources.css">
+  
+ 
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,7 +42,7 @@ id="bootstrap-css">
   <link rel="stylesheet" href="/Boolstrap/vendors/fonts/bootstrap-icons.woff2">
   <link rel="stylesheet" href="/Boolstrap/vendors/icons/bootstrap-icons.css">
   <link rel="stylesheet" href="/Boolstrap/vendors/icons/bootstrap-icons.json">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
 
@@ -48,249 +51,11 @@ id="bootstrap-css">
 
 
 
-.start-header {
-	opacity: 0.5;
-	transform: translateY(0);
-	padding: 20px 0;
-	box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
-}
-.start-header.scroll-on {
-	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
-	padding: 10px 0;
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
-}
-.start-header.scroll-on .navbar-brand img{
-	height: 24px;
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
-}
-.navigation-wrap{
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
-}
-.navbar{
-	padding: 0;
-}
-.navbar-brand img{
-	height: 28px;
-	width: auto;
-	display: block;
-  filter: brightness(10%);
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
-}
-.navbar-toggler {
-	float: right;
-	border: none;
-	padding-right: 0;
-}
-.navbar-toggler:active,
-.navbar-toggler:focus {
-	outline: none;
-}
-.navbar-light .navbar-toggler-icon {
-	width: 24px;
-	height: 17px;
-	background-image: none;
-	position: relative;
-	border-bottom: 1px solid #000;
-    transition: all 300ms linear;
-}
-.navbar-light .navbar-toggler-icon:after, 
-.navbar-light .navbar-toggler-icon:before{
-	width: 24px;
-	position: absolute;
-	height: 1px;
-	background-color: #000;
-	top: 0;
-	left: 0;
-	content: '';
-	z-index: 2;
-    transition: all 300ms linear;
-}
-.navbar-light .navbar-toggler-icon:after{
-	top: 8px;
-}
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-	transform: rotate(45deg);
-}
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-	transform: translateY(8px) rotate(-45deg);
-}
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-	border-color: transparent;
-}
-.nav-link{
-	color: #212121 !important;
-	font-weight: 500;
-    transition: all 200ms linear;
-}
-.nav-item:hover .nav-link{
-	color: #4328d8 !important;
-}
-.nav-item.active .nav-link{
-	color: #777 !important;
-}
-.nav-link {
-	position: relative;
-	padding: 5px 0 !important;
-	display: inline-block;
-}
-.nav-item:after{
-	position: absolute;
-	bottom: -5px;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	content: '';
-	background-color: skyblue;
-	opacity: 0;
-    transition: all 200ms linear;
-}
-.nav-item:hover:after{
-	bottom: 0;
-	opacity: 1;
-}
-.nav-item.active:hover:after{
-	opacity: 0;
-}
-.nav-item{
-	position: relative;
-    transition: all 200ms linear;
-}
-
-.nav-item .dropdown-menu {
-    transform: translate3d(0, 10px, 0);
-    visibility: hidden;
-    opacity: 0;
-	max-height: 0;
-    display: block;
-	padding: 0;
-	margin: 0;
-    transition: all 200ms linear;
-}
-.nav-item.show .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-	max-height: 999px;
-    transform: translate3d(0, 0px, 0);
-}
-.dropdown-menu {
-	padding: 10px!important;
-	margin: 0;
-	font-size: 13px;
-	letter-spacing: 1px;
-	color: #212121;
-	background-color: #fcfaff;
-	border: none;
-	border-radius: 3px;
-	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
-    transition: all 200ms linear;
-}
-.dropdown-toggle::after {
-	display: none;
-}
-
-.dropdown-item {
-	padding: 3px 15px;
-	color: #212121;
-	border-radius: 2px;
-    transition: all 200ms linear;
-}
-.dropdown-item:hover, 
-.dropdown-item:focus {
-	color: #fff;
-	background-color: rgba(129,103,169,.6);
-}
-@media (max-width: 767px) { 
-	h1{
-		font-size: 38px;
-	}
-	.nav-item:after{
-		display: none;
-	}
-	.nav-item::before {
-		position: absolute;
-		display: block;
-		top: 15px;
-		left: 0;
-		width: 11px;
-		height: 1px;
-		content: "";
-		border: none;
-		background-color: #000;
-		
-	}
-	.dropdown-toggle::after {
-		position: absolute;
-		display: block;
-		top: 10px;
-		left: -23px;
-		width: 1px;
-		height: 11px;
-		content: "";
-		border: none;
-		background-color: #000;
-		
-		transition: all 200ms linear;
-	}
-	.dropdown-toggle[aria-expanded="true"]::after{
-		transform: rotate(90deg);
-		opacity: 0;
-	}
-	.dropdown-menu {
-		padding: 0 !important;
-		background-color: transparent;
-		box-shadow: none;
-		transition: all 200ms linear;
-	}
-	.dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
-		margin-top: 10px !important;
-		margin-bottom: 20px !important;
-	}
-	body.dark .nav-item::before {
-		background-color: #fff;
-	}
-	body.dark .dropdown-toggle::after {
-		background-color: #fff;
-	}
-	body.dark .dropdown-menu {
-		background-color: transparent;
-		box-shadow: none;
-	}
-}
-
-.Quote1{
-    height: 250px;
-    width: 100%;
-    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    color: white;
-    opacity: 0.95;
-    
-    font-size: 2em;
-    text-align: center;
-    line-height: 250px;
-}
-.quote1img{
-  width: 100%;
-  height: 200px;
-}
-
-
-
 /*background for navbar top*/
 .container_type {
     display: flex;
     align-items: center;
-   background-image: url(/Photos/);
+   background-image: url(/Photos/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg);
    background-repeat: no-repeat;
    background-size:cover;    
     width: 100%;
@@ -333,6 +98,7 @@ id="bootstrap-css">
 
 
 /*corosuel*/
+
     body {
         font-family: "Open Sans", sans-serif;
     }
@@ -430,115 +196,81 @@ id="bootstrap-css">
     }
 
 
-/* Style the tab */
-.tab {
+    .topnav {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: rgb(8, 8, 8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
+.topnav a {
   float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
   padding: 14px 16px;
-  transition: 0.3s;
+  text-decoration: none;
   font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
+.topnav a:hover {
   background-color: #ddd;
+  color: black;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.topnav a.active {
+  background-color: hsl(187, 86%, 53%);
+  color: white;
 }
 
-/* Style the tab content */
-.tabcontent {
+.topnav .icon {
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 
 
 
 
-/*timeline*/
+
 
     </style>
 
 </head>
 <body>
    
-    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+    
 
 
 
 
-    <div class="navigation-wrap bg-light start-header start-style">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                     <nav class="navbar navbar-expand-md navbar-light">
-                    
-                        <a class="navbar-brand" href="https://front.codes/" target="_blank"><img src= "/Photos/iiti ecell try logo.png" alt=""></a>	
-                        
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Events</a>
-                                        <a class="dropdown-item" href="#">Initiatives</a>
-                                        <a class="dropdown-item" href="#">Gallary</a>
-                                        <a class="dropdown-item" href="#">Spounsers</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="#Books">Books</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="#Blogs">Blogs</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Videos</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="#"></a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    </nav>		
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
-    <div class='container_type'>
+    <div class='container_type' id="typewiterid">
       <p class='typewriter'>Entreprenuership Cell IITI<br>books 
       <span class='typewriter-text' data-text='[ "open minds.", "Increases Empathy.", " widen our consciousness." ]'></span>
       </p>
@@ -589,54 +321,45 @@ function deleting( index, text ) {
 });
     </script>
 
-<div class="row">
-    <div class="Quote1">
-        IDEATE. INNOVATE. INCUBATE.
 
-
-
-        <button onclick="topFunction()" id="myBtn" title="Go to top">⏏︎</button>
-
-        <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Blogs</a>
+  <a href="#contact">Books</a>
+  <a href="#about">Entreprenuer Diaries</a>
+  <a href="#news">Videos</a>
+  <a href="#contact">Our Team</a>
+  <a href="#about">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+  
         
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        </script>
-        
-        
-      </div>
-      <div>
-        <img class="quote1img" src="/Photos/Screenshot 2021-07-20 at 9.56.38 PM.png" alt="">
-      </div>
-    </div>
-    <div class="container-xl">
+      
+     <div class="container-xl">
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Carousel indicators -->
+                    
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                         <li data-target="#myCarousel" data-slide-to="3"></li>
                     </ol>   
-                    <!-- Wrapper for carousel items -->
+                     <!--Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="img-box"><img src="/Photos/Jeff-Bezos.jpeg" alt=""></div>
@@ -677,134 +400,149 @@ function deleting( index, text ) {
     <br>
     <br>
     <br>
-    <br>
-
+    <br> 
+    <div class="container-fluid mb-5">
+      <div class="text-center mt-5">
+          <h1>Recources</h1>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+            <div class="box">
+                <a href="">
+               <div class="content-wrap item-list1">
+                  <div class="icon"> <img src="/Photos/books icon.png"> </div>
+                     <h4>Books</h4>
+                      <p></p>
+                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+              <div class="box">
+                <a href="">
+                  <div class="content-wrap item-list2">
+                      <div class="icon"> <img src="/Photos/blog.bl.png"> </div>
+                      <h4>Blogs</h4>
+                      <p></p>
+                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+              <div class="box">
+                <a href="">
+                  <div class="content-wrap item-list3">
+                      <div class="icon"> <img src="/Photos/diaries.f.png"> </div>
+                      <h4>Entrepreneur Diaries</h4>
+                      <p> </p>
+                  </div>
+              </div>
+            </a>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="box">
+                <a href="">
+                  <div class="content-wrap item-list4">
+                      <div class="icon"> <img src="/Photos/video-icon.png"> </div>
+                      <h4>Videos</h4>
+                      <p></p>
+                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+              <div class="box">
+                <a href="">
+                  <div class="content-wrap item-list5">
+                      <div class="icon"> <img src="/Photos/preject icon.png"> </div>
+                      <h4>Our Projects</h4>
+                      <p></p>
+                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+              <div class="box">
+                <a href="">
+                  <div class="content-wrap item-list6">
+                      <div class="icon"> <img src="/Photos/teamss.png"> </div>
+                      <h4>Our Team<br>holla</h4>
+                      <p></p>
+                  </div>
+              </div>
+            </a>
+          </div>
+      </div>
+  </div>
     
 
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
-
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-
-
-
-
-
-
-
-
-
-
-<section id="footer" class="footer">
-  <div class="footerBg"></div>
-  <div class="container">
-  <div class="row">
-  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-  <div class="contact-form btm-brdr">
-  <div class="form-Box">
-  <input type="text" placeholder="Name" class="b_effect" />
-   </div>
-  <div class="form-Box">
-  <input type="text" placeholder="Email" class="b_effect" />
-  </div>
-  <div class="form-Box">                              <textarea placeholder="Message" class="b_effect"></textarea>
-  </div>
-  <div class="form-Box">
-  <input type="submit" value="Submit" class="fill-btn" />
-  </div>
-  </div>
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-  <div class="contact-address btm-brdr">
-  <h4 class="fTitle"> Contact <span>Us</span> </h4>
-  <ul>
-  <li> <i class="fa fa-phone" aria-hidden="true"></i> <span>1800 999 87 21</span> </li>
-  <li> <i class="fa fa-map-marker" aria-hidden="true"></i> <span>121 Abc St, Delhi VIC 5000, India</span> </li>
-  <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>info@scanfcode.com</span> 
-                                  </li>
-  </ul>
-  </div>
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-  <div class="subscribe btm-brdr">
-  <h4 class="fTitle"> Subscribe <span>Newsletter</span> </h4>
-  <form>
-  <input type="text" placeholder="Example@example.com" />                                <button type="button" class="fill-btn">Subscribe</button>
-  </form>
-  </div>
-  <div class="social-icons">
-  <h4 class="fTitle"> Social <span>News</span> </h4>
-  <ul>
-  <li>
-  <a href="'#" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
-  <li> <a href="'#" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
-  <li><a href="'#" target="_blank"> <i class="fa fa-youtube-play" aria-hidden="true"></i> </a></li>
-  <li><a href="'#" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
-  </ul>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section>
-  <!-- footer Section Ends -->
-  <!-- copyright Section Begins -->
-  <section id="copyright" class="copyright">
-  <div class="container">
-  <div class="row">
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <h6> © 2017 This theme is powered by <a href="http://scanfcode.com" target="_blank">Scanfcode.</a> </h6>
-  </div>
-  </div>
-  </div>
-  </section>
-
-
-
-
-
-<script>
- function myFunction() {
-var x = document.getElementById("centered_nav");
-if (x.className === "rc_nav") {
-  x.className += " responsive";
-} else {
-  x.className = "rc_nav";
-}
-}
-</script>
+<!--footer below-->
+    <section id="footer" class="footer">
+      <div class="footerBg"></div>
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="contact-form btm-brdr">
+      <div class="form-Box">
+      <input type="text" placeholder="Name" class="b_effect" />
+       </div>
+      <div class="form-Box">
+      <input type="text" placeholder="Email" class="b_effect" />
+      </div>
+      <div class="form-Box">                              <textarea placeholder="Message" class="b_effect"></textarea>
+      </div>
+      <div class="form-Box">
+      <input type="submit" value="Submit" class="fill-btn" />
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="contact-address btm-brdr">
+      <h4 class="fTitle"> Contact <span>Us</span> </h4>
+      <ul>
+      <li> <i class="fa fa-phone" aria-hidden="true"></i> <span>Vishwas Raj :+91-6387891938<br>
+          Sudeep Patra :+91-9587637471</span> </li>
+      <li> <i class="fa fa-map-marker" aria-hidden="true"></i> <span>Room 302-B, PHY-1, Academic POD, IIT Indore, Madhya Pradesh-452020</span> </li>
+      <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>ecell@iiti.ac.in</span> 
+                                      </li>
+      </ul>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="subscribe btm-brdr">
+      <h4 class="fTitle"> Subscribe <span>Us</span> </h4>
+      <form>
+      <input type="text" placeholder="Example@example.com" />                                <button type="button" class="fill-btn">Subscribe</button>
+      </form>
+      </div>
+      <div class="social-icons">
+      <h4 class="fTitle"> Social <span>Media</span> </h4>
+      <ul>
+      <li>
+      <a href="https://www.facebook.com/sesciiti/" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
+      <li> <a href="https://twitter.com/sesciiti" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
+      <li><a href="https://in.linkedin.com/company/sesc-iiti" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+      <li><a href="https://www.instagram.com/ecell.iiti/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!-- footer Section Ends -->
+      <!-- copyright Section Begins -->
+      <section id="copyright" class="copyright">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h6> Copyright ©E-Cell IIT Indore 2021| All Rights Reserved| Developed with ❤ by the team <a href="http://scanfcode.com" target="_blank"></a> </h6>
+      </div>
+      </div>
+      </div>
+      </section>
 
 
 
@@ -812,87 +550,19 @@ if (x.className === "rc_nav") {
 
 
 
-    <script>
-
-        (function($) { "use strict";
-        
-        $(function() {
-            var header = $(".start-style");
-            $(window).scroll(function() {    
-                var scroll = $(window).scrollTop();
-            
-                if (scroll >= 10) {
-                    header.removeClass('start-style').addClass("scroll-on");
-                } else {
-                    header.removeClass("scroll-on").addClass('start-style');
-                }
-            });
-        });		
-            
-        //Animation
-        
-        $(document).ready(function() {
-            $('body.hero-anime').removeClass('hero-anime');
-        });
-        
-        //Menu On Hover
-            
-        $('body').on('mouseenter mouseleave','.nav-item',function(e){
-                if ($(window).width() > 750) {
-                    var _d=$(e.target).closest('.nav-item');_d.addClass('show');
-                    setTimeout(function(){
-                    _d[_d.is(':hover')?'addClass':'removeClass']('show');
-                    },1);
-                }
-        });	
-        
-        //Switch light/dark
-        
-        $("#switch").on('click', function () {
-            if ($("body").hasClass("dark")) {
-                $("body").removeClass("dark");
-                $("#switch").removeClass("switched");
-            }
-            else {
-                $("body").addClass("dark");
-                $("#switch").addClass("switched");
-            }
-        });  
-        
-        })(jQuery); 
-        
-        
-        function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
 
 
-        $(document).ready(function(){
-	$(window).scroll(function () {
-			if ($(this).scrollTop() > 50) {
-				$('#back-to-top').fadeIn();
-			} else {
-				$('#back-to-top').fadeOut();
-			}
-		});
-		// scroll body to 0px on click
-		$('#back-to-top').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 400);
-			return false;
-		});
-});
-          </script>
+
+
+
+
+
+
+
+
+
+
+
+    
 </body>
 </html>
