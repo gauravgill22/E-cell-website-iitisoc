@@ -1,6 +1,9 @@
-html, body {
-    margin: 0 !important;
-    padding: 0 !important;
+
+  h1{
+    font-family: 'Droid Sans', sans-serif;
+  }
+  p{
+    font-family: serif;
   }
   
   /* Text Centering Shortcut */
@@ -67,7 +70,7 @@ html, body {
   /* Article */
   article {
     font-family: 'roboto';
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   article h2, article h3 {
     font-family: 'ubuntu'

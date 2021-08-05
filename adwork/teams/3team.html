@@ -64,24 +64,35 @@
   
  });
 </script>
-<div id="rc_logo">
-    <a href="#home" title="Logo">ECELL IITI</a> <!-- Swap this placeholder out for your logo image -->
-    </div>  
 
-    
-    <div class="rc_nav" id="centered_nav">
-    <a href="#home" title="Home">Home</a>
-    <a href="" title="Services">Books</a>
-    <a href="#about" title="About">Blogs</a>
-    <a href="#contact" title="Contact">Videos</a>
-    <a href="#contact" title="Contact">Entreprenuer Diaries</a>
-    <a href="#contact" title="Contact">Contact Us</a>
-    <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
+
+
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">Blogs</a>
+    <a href="#contact">Books</a>
+    <a href="#about">Entreprenuer Diaries</a>
+    <a href="#news">Videos</a>
+    <a href="#contact">Our Team</a>
+    <a href="#about">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
     <!-- alumini below-->
     <div class="container mt-40">
         
-        <h1 class="text-center">Startup from our Alumni</h3>
+        <h1 class="text-center"><strong> Startup from our Alumni</strong></h3>
     <row>
         <div class="row mt-30">
             <div class="col-lg-3 col-md-4 co">
@@ -289,55 +300,33 @@
         </div>
     </row>
 </div>
+
+
+<hr>
  <!-- team members below-->
 <div class="container mt-40">
         
-        <h1 class="text-center" style="margin-top: 100px;">THE TEAM</h3>
+        <h1 class="text-center" style="margin-top: 30px;"><strong> TEAM </strong></h3>
  <row>
+    <div class="container text-center">
     <div class="row mt-30">
-        <div class="col-md-4 col-sm-6">
-            <div class="box6 team">
-                
-                <div class="box-content">
-                    <h3 class="title">Swaminathan Ramabadran</h3>
-                    <span class="post">Head CIIEIR Office</span>
-                    <ul class="icon">
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
+        <div class="col-sm-4">
+            
+                <p style="font-size: 2em;"><strong>Swaminathan Ramabadran </strong></p>
+                <p style="font-size: 1.5em;">Head CIIEIR Office</p>
+              </div>
+              <div class="col-sm-4">
+           
+                <p style="font-size: 2em;"><strong>Kumar Gaurav</strong></p>
+                <p style="font-size: 1.5em;">AO CIIEIR Office</p>
+              </div>
+                <div class="col-sm-4">
+            
+                  <p style="font-size: 2em;"><strong>Kavita Inamdar</strong></p>
+                  <p style="font-size: 1.5em;">CIIEIR Office</p>
                 </div>
-            </div>
-        </div>
-        <div class=" col-md-4 col-sm-6">
-            <div class="box6 team">
-                
-                <div class="box-content">
-                    <h3 class="title">Kumar Gaurav</h3>
-                    <span class="post">AO CIIEIR Office</span>
-                    <ul class="icon">
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
                 </div>
-            </div>
-        </div>
-        <div class=" col-md-4 col-sm-6">
-            <div class="box6 team">
-     
-                <div class="box-content">
-                    <h3 class="title">Kavita Inamdar</h3>
-                    <span class="post">CIIEIR Office</span>
-                    <ul class="icon">
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>  
+     </div>
  </row>
              
    <row>
@@ -766,7 +755,7 @@
     
     <br><br><br>
  
-  
+ 
         <!--footer below-->
 <section id="footer" class="footer" style="width: 100%;">
             <div class="footerBg"></div>
@@ -831,6 +820,7 @@
             </div>
             </div>
            </section>
+        
         
 <div>
 </body>

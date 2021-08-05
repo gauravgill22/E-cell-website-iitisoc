@@ -140,23 +140,31 @@ id="bootstrap-css">
       </script>
 
 
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">Blogs</a>
+    <a href="#contact">Books</a>
+    <a href="#about">Entreprenuer Diaries</a>
+    <a href="#news">Videos</a>
+    <a href="#contact">Our Team</a>
+    <a href="#about">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 
-<div id="rc_logo">
-    <a href="#home" title="Logo">ECELL IITI</a> <!-- Swap this placeholder out for your logo image -->
-    </div>  
-
-    
-    <div class="rc_nav" id="centered_nav">
-    <a href="#home" title="Home">Home</a>
-    <a href="#services" title="Services">Books</a>
-    <a href="#about" title="About">Blogs</a>
-    <a href="#contact" title="Contact">Videos</a>
-    <a href="#contact" title="Contact">Entreprenuer Diaries</a>
-    <a href="#contact" title="Contact">Contact Us</a>
-    <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
         
-        <div class="rc_content">
+        <div class="rc_content" style="margin-top: 50px;">
           <h3>Inspire by those who perspired</h3>
           <p></p>
         </div>
