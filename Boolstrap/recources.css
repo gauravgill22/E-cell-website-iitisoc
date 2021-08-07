@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #eee;
-  font-family: "Ubuntu", sans-serif;
-}
-
 .box {
   position: relative;
   width: 100%;
@@ -331,4 +320,4 @@ body {
 
 .copyright h6 a:hover {
   color: #201f1f;
-}
+}/*# sourceMappingURL=recources.css.map */

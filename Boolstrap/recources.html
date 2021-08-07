@@ -196,6 +196,12 @@ id="bootstrap-css">
     }
 
 
+
+    
+    
+    
+    
+
     .topnav {
   overflow: hidden;
   background-color: rgb(8, 8, 8);
@@ -255,7 +261,13 @@ id="bootstrap-css">
 
 
 
-
+#slidy-container { 
+  width: 400px;
+  height: 400px;
+  
+  overflow: hidden; 
+  margin: 0 auto;
+}
 
     </style>
 
@@ -401,6 +413,19 @@ function deleting( index, text ) {
     <br>
     <br>
     <br> 
+
+
+    <div class="container"><div class="border-corners">
+      <h1>The Dream</h1>
+      <em>Reality before it gets there.</em>
+      <p>
+        This is kind of what I wanted. Its not fully bordered and looks kinda interesting. I dont like how it doesnt scale. This has been hard coded to be how tall it is. It looks cool tho :) Anyway, Have some cat ipsum!	
+  
+      </p>
+  
+    <p>Lick face hiss at owner, pee a lot, and meow repeatedly scratch at fence purrrrrr eat muffins and poutine until owner comes back then cats take over the world go into a room to decide you didn't want to be in there anyway. Ears back wide eyed present belly, scratch hand when stroked yet bite plants i like fish sleep on dog bed, force dog to sleep on floor. Eat owner's food cat playing a fiddle in hey diddle diddle?. Rub butt on table lie in the sink all day for open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow! but bite the neighbor's bratty kid or funny little cat chirrup noise shaking upright tail when standing next to you. Ears back wide eyed present belly.  Ears back wide eyed present belly.</p>
+    </div>
+  </div>
     <div class="container-fluid mb-5">
       <div class="text-center mt-5">
           <h1>Recources</h1>
@@ -477,6 +502,138 @@ function deleting( index, text ) {
       </div>
   </div>
     
+
+  <div id="slidy-container">
+    <figure id="slidy">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/eyes.jpg" alt="eyes" >
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lou.jpg" alt="lou" >
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie-2.jpg" alt="lucie-2" >
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie" >
+    </figure>
+  </div>
+<script>
+  /* user defined variables */
+var timeOnSlide = 3, 		
+    // the time each image will remain static on the screen, measured in seconds
+timeBetweenSlides = 1, 	
+    // the time taken to transition between images, measured in seconds
+
+// test if the browser supports animation, and if it needs a vendor prefix to do so
+    animationstring = 'animation',
+    animation = false,
+    keyframeprefix = '',
+    domPrefixes = 'Webkit Moz O Khtml'.split(' '), 
+    // array of possible vendor prefixes
+    pfx  = '',
+    slidy = document.getElementById("slidy"); 
+if (slidy.style.animationName !== undefined) { animation = true; } 
+// browser supports keyframe animation w/o prefixes
+
+if( animation === false ) {
+  for( var i = 0; i < domPrefixes.length; i++ ) {
+    if( slidy.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
+      pfx = domPrefixes[ i ];
+      animationstring = pfx + 'Animation';
+      keyframeprefix = '-' + pfx.toLowerCase() + '-';
+      animation = true;
+      break;
+    }
+  }
+}
+
+if( animation === false ) {
+  // animate in JavaScript fallback
+} else {
+  var images = slidy.getElementsByTagName("img"),
+      firstImg = images[0], 
+      // get the first image inside the "slidy" element.
+      imgWrap = firstImg.cloneNode(false);  // copy it.
+  slidy.appendChild(imgWrap); // add the clone to the end of the images
+  var imgCount = images.length, // count the number of images in the slide, including the new cloned element
+      totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount - 1), // calculate the total length of the animation by multiplying the number of _actual_ images by the amount of time for both static display of each image and motion between them
+      slideRatio = (timeOnSlide / totalTime)*100, // determine the percentage of time an induvidual image is held static during the animation
+      moveRatio = (timeBetweenSlides / totalTime)*100, // determine the percentage of time for an individual movement
+      basePercentage = 100/imgCount, // work out how wide each image should be in the slidy, as a percentage.
+      position = 0, // set the initial position of the slidy element
+      css = document.createElement("style"); // start marking a new style sheet
+  css.type = "text/css";
+  css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n"; // set the width for the slidy container
+  css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }\n";
+  css.innerHTML += "@"+keyframeprefix+"keyframes slidy {\n"; 
+  for (i=0;i<(imgCount-1); i++) { // 
+    position+= slideRatio; // make the keyframe the position of the image
+    css.innerHTML += position+"% { left: -"+(i * 100)+"%; }\n";
+    position += moveRatio; // make the postion for the _next_ slide
+    css.innerHTML += position+"% { left: -"+((i+1) * 100)+"%; }\n";
+}
+  css.innerHTML += "}\n";
+  css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n"; // call on the completed keyframe animation sequence
+document.body.appendChild(css); // add the new stylesheet to the end of the document
+}
+
+</script>
+  
+
+
+
+
+<div class="wrapper">
+  <div class="timelineBox">
+    <div class="timelineHeader">
+      <h3>Timeline</h3>
+      <span>WORK EXPERIENCE</span>
+    </div>
+    <div class="timelineBody">
+      <ul class="timeline1">
+        <li>
+          <div class="timelineDot"></div>
+          <div class="timelineDate">Jun 2015 to Jan 2017</div>
+          <div class="timelineWork">On-site Network Support Enginner bahbdduywevfyu iydwb ded w fufu ef. behwfehw efhu ef f f fhew jw <small>OmniPrime Marketing, inc.</small></div>
+        </li>
+        <li>
+          <div class="timelineDot"></div>
+          <div class="timelineDate">Jan 2014 to May 2015</div>
+          <div class="timelineWork">IT Support / Web Designer & Developer<small>IT.Resources Corporation (ITRC)</small></div>
+        </li>
+        <li>
+          <div class="timelineDot"></div>
+          <div class="timelineDate">Nov 2012 to Oct 2014</div>
+          <div class="timelineWork">OJT Graphic Artist / IT Support<small>Lima Gulf Industrial Trading</small></div>
+        </li>
+        <li>
+          <div class="timelineDot"></div>
+          <div class="timelineDate">Oct 2006 to Present</div>
+          <div class="timelineWork">Art Direction, Graphic Design, Web Development<small>Independent / Freelance</small></div>
+        </li>
+
+        <li>
+          <div class="timelineDot"></div>
+          <div class="timelineDate">Jun 2015 to Jan 2017</div>
+          <div class="timelineWork">On-site Network Support Enginner<small>OmniPrime Marketing, inc.</small></div>
+        </li>
+        <li>
+          <div class="timelineDot"></div>
+          <div class="timelineDate">Jan 2014 to May 2015</div>
+          <div class="timelineWork">IT Support / Web Designer & Developer<small>IT.Resources Corporation (ITRC)</small></div>
+        </li>
+        <li>
+          <div class="timelineDot"></div>
+          <div class="timelineDate">Nov 2012 to Oct 2014</div>
+          <div class="timelineWork">OJT Graphic Artist / IT Support<small>Lima Gulf Industrial Trading</small></div>
+        </li>
+        <li>
+          <div class="timelineDot"></div>
+          <div class="timelineDate">Oct 2006 to Present</div>
+          <div class="timelineWork">Art Direction, Graphic Design, Web Development<small>Independent / Freelance</small></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="ajay">
+<a href="https://codepen.io/AjayRawatCodepen/" target="_blank">See more pens</a>
+</div>
 
 
 <!--footer below-->
