@@ -1,56 +1,348 @@
-{%extends "layout.html" %}
-{% block title %}Welcome to E-cell,IITI{% endblock%}
-{%block content%}
-
-<link rel="stylesheet" href="{{url_for('static',filename='3team.css')}}">
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thirdatt-team</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='3team.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='team.css')}}">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<style>
+    @media (min-aspect-ratio: 16/9) {
+    .footer {
+        width:100%;
+        height: auto;
+    }
+}
+  @media (max-aspect-ratio: 16/9) {
+    .footer { 
+        width:100%;
+        height: auto;
+    }
+}
+</style>
 <body>
-   
-    <div class="container mt-40">
-        <h1 class="text-center" style="padding-top:100px;">THE TEAM</h3>
- <row>
-    <div class="row mt-30">
-        <div class="col-md-4 col-sm-6">
-            <div class="box6 team">
-                
-                <div class="box-content">
-                    <h3 class="title">Swaminathan Ramabadran</h3>
-                    <span class="post">Head CIIEIR Office</span>
-                    <ul class="icon">
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class=" col-md-4 col-sm-6">
-            <div class="box6 team">
-                
-                <div class="box-content">
-                    <h3 class="title">Kumar Gaurav</h3>
-                    <span class="post">AO CIIEIR Office</span>
-                    <ul class="icon">
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class=" col-md-4 col-sm-6">
-            <div class="box6 team">
+    <div class='container_type'>
+        <p class='typewriter'>Entreprenuership Cell IITI<br> 
+        <span class='typewriter-text' data-text='[ "Talent wins games,", "Teamwork wins Championships!"]'></span>
+        </p>
+      </div>
      
-                <div class="box-content">
-                    <h3 class="title">Kavita Inamdar</h3>
-                    <span class="post">CIIEIR Office</span>
-                    <ul class="icon">
-                        <li><a href="#" class="fa fa-instagram"></a></li>
+      <script>
+          $(document).ready(function() {
+   typing( 0, $('.typewriter-text').data('text') );
+  
+  function typing( index, text ) {
+   
+    var textIndex = 1;
+  
+    var tmp = setInterval(function() {
+      if ( textIndex < text[ index ].length + 1 ) {
+        $('.typewriter-text').text( text[ index ].substr( 0, textIndex ) );
+        textIndex++;
+      } else {
+        setTimeout(function() { deleting( index, text ) }, 2000);
+        clearInterval(tmp);
+      }
+  
+    }, 150);
+  
+  }
+  
+  function deleting( index, text ) {
+  
+    var textIndex = text[ index ].length;
+  
+    var tmp = setInterval(function() {
+  
+      if ( textIndex + 1 > 0 ) {
+        $('.typewriter-text').text( text[ index ].substr( 0, textIndex ) );
+        textIndex--;
+      } else {
+        index++;
+        if ( index == text.length ) { index = 0; }
+        typing( index, text );
+        clearInterval(tmp);
+      }
+  
+    }, 150)
+  
+  }
+  
+ });
+</script>
+
+
+
+<div class="topnav" id="myTopnav">
+    <a href="{{url_for('homeadwork')}}" title="Home">Home</a>
+    <a href ="{{url_for('resourses')}}" title ="Resources">Resources</a>
+    <a href="{{url_for('blog')}}" title="About">Blogs</a>
+    <a href="{{url_for('books')}}" title="Services">Books</a>
+    <a href="{{url_for('videos')}}" title="Contact">Videos</a>
+    <a href="{{url_for('diaries')}}" title="Contact">Entreprenuer Diaries</a>
+    <a href ="{{url_for('innovationandprojects')}}" title="Inspiration Hub">Innovation and Projects</a>
+    <a href="{{url_for('query')}}" title="Contact">Contact Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <!-- alumini below-->
+    <div class="container mt-40">
+        
+        <h1 class="text-center"><strong> Startups from our Alumni</strong></h3>
+    <row>
+        <div class="row mt-30">
+            <div class="col-lg-3 col-md-4 co">
+                <div class="box6">
+                    <img class="team" src="{{url_for('static',filename='pic/1.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Ankit Goyal</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">Director</h3>
+                        <span class="post">UnacademyBrands-GATE at
+                            Unacademy</span>
+                        <ul class="icon">
+                            
                         <li><a href="#" class="fa fa-facebook"></a></li>
                         <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box6">
+                    <img class="team" src="{{url_for('static',filename='pic/2.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Rohit Nitin Joshi</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">Co-Founder</h3>
+                        <span class="post">at Kreatryx</span>
+                        <ul class="icon">
+                           
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box6">
+                    <img class="team" src="{{url_for('static',filename='pic/3.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Sandeep Bommireddi</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">Co-founder</h3>
+                        <span class="post">of Adonmo</span>
+                        <ul class="icon">
+                            
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box6">
+                    <img src="{{url_for('static',filename='pic/4.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Gaurav Parchani</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">Co-Founder </h3>
+                        <span class="post">at Turtle Shell
+                            Technologies
+                            Private Limited</span>
+                        <ul class="icon">
+                           
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+    </row>
+    <row>
+        <div class="row mt-30">
+            <div class="col-lg-3 col-md-4 co">
+                <div class="box6">
+                    <img class="team"src="{{url_for('static',filename='pic/5.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Jwalant Shah</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">Co-Founder
+                            & Director Business </h3>
+                        <span class="post">at SWAAHA
+                            Resource Management Pvt.
+                            Ltd</span>
+                        <ul class="icon">
+                            
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box6">
+                    <img class="team" src="{{url_for('static',filename='pic/6.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Rohit Agarwal</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">
+                            Co-Founder
+                            & Director Business</h3>
+                        <span class="post">t at SWAAHA
+                            Resource Management Pvt.
+                            Ltd.
+                            </span>
+                        <ul class="icon">
+                          
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box6">
+                    <img class="team" src="{{url_for('static',filename='pic/7.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Ravi Shankar</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">Founder & Director</h3>
+                        <span class="post">t Esmartify Private Limited & Boosters Edutech</span>
+                        <ul class="icon">
+                           
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box6">
+                    <img src="{{url_for('static',filename='pic/8.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Shikhar Bansal</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">Founder & Director</h3>
+                        <span class="post">at Boosters Edutech</span>
+                        <ul class="icon">
+                            
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </row>
+    <row>
+        <div class="row mt-30">
+            <div class="col-lg-3 col-md-4 co">
+                <div class="box6">
+                    <img class="team"src="{{url_for('static',filename='pic/9.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Anmol Arora</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">CEO</h3>
+                        <span class="post">- DocVita</span>
+                        <ul class="icon">
+                           
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box6">
+                    <img class="team" src="{{url_for('static',filename='pic/10.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Vikram Patel</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">Co-Founder
+                            & CTO</h3>
+                        
+                        <span class="post">at DocVita</span>
+                        <ul class="icon">
+                           
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box6">
+                    <img class="team" src="{{url_for('static',filename='pic/11.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Venkata Sai Vamsi Penupothu</strong></p>
+                    <div class="box-content">
+                        <h3 class="title">Co-Founder</h3>
+                        <span class="post">r @ Runo</span>
+                        <ul class="icon">
+                           
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="box6">
+                    <img src="{{url_for('static',filename='pic/12.PNG')}}" alt="">
+                    <p class=" tittle"><strong>Tushar Rokade
+                    </strong></p>
+                    <div class="box-content">
+                        <h3 class="title">Co-Founder</h3>
+                        <span class="post">at Artpillz</span>
+                        <ul class="icon">
+                            
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </row>
+</div>
+
+
+<hr>
+ <!-- team members below-->
+<div class="container mt-40">
+        
+        <h1 class="text-center" style="margin-top: 30px;"><strong> TEAM </strong></h3>
+ <row>
+    <div class="container text-center">
+    <div class="row mt-30">
+        <div class="col-sm-4">
+            
+                <p style="font-size: 2em;"><strong>Swaminathan Ramabadran </strong></p>
+                <p style="font-size: 1.5em;">Head CIIEIR Office</p>
+              </div>
+              <div class="col-sm-4">
+           
+                <p style="font-size: 2em;"><strong>Kumar Gaurav</strong></p>
+                <p style="font-size: 1.5em;">AO CIIEIR Office</p>
+              </div>
+                <div class="col-sm-4">
+            
+                  <p style="font-size: 2em;"><strong>Kavita Inamdar</strong></p>
+                  <p style="font-size: 1.5em;">CIIEIR Office</p>
+                </div>
+                </div>
+     </div>
  </row>
              
    <row>
@@ -109,7 +401,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">>
+            <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box6">
                     <img class="team" src="http://ecell.iiti.ac.in/team/Sharvari.jpeg" alt="">
                     <div class="box-content">
@@ -169,7 +461,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">>
+            <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box6">
                     <img src="http://ecell.iiti.ac.in/team/AnushkaPaul.jpg" alt="">
                     <div class="box-content">
@@ -229,7 +521,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">>
+            <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box6">
                     <img src="http://ecell.iiti.ac.in/team/ArpitVyas.jpg" alt="">
                     <div class="box-content">
@@ -334,7 +626,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">>
+            <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="box6">
                     <img src="http://ecell.iiti.ac.in/team/DeveshJindal.jpg" alt="">
                     <div class="box-content">
@@ -412,7 +704,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">>
+        <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="box6">
                 <img src="http://ecell.iiti.ac.in/team/KomminiMadhumitha.jpg" alt="">
                 <div class="box-content">
@@ -472,16 +764,103 @@
             </div>
         
     </div>
-</div> 
-</row>        
-            
+   </div> 
+   </row>        
+</div>
 
 
-
-
-
-    </div>
     
+    <br><br><br>
+ 
+ 
+        <!--footer below-->
+        <section id="footer" class="footer">
+            <div class="footerBg"></div>
+            <div class="container">
+            <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="contact-address btm-brdr">
+            <h4 class="fTitle"> Contact <span>Us</span> </h4>
+            <ul>
+            <li> <i class="fa fa-phone" aria-hidden="true"></i> <span>Vishwas Raj :+91-6387891938<br>
+                Sudeep Patra :+91-9587637471</span> </li>
+            <li> <i class="fa fa-map-marker" aria-hidden="true"></i> <span>Room 302-B, PHY-1, Academic POD, IIT Indore, Madhya Pradesh-452020</span> </li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>ecell@iiti.ac.in</span> 
+                                            </li>
+            </ul>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3 style="color:black;">Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="{{url_for('homeadwork')}}">Home</a></li>
+                  <li><a href="#IITI">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About us</a></li>
+        
+                  <li><a href="{{url_for('team')}}">Alumni and Team</a></li>
+                  <li><a href="{{url_for('query')}}">Contact us</a></li>
+        
+                </ul>
+              </div>   
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="subscribe btm-brdr">
+            <h4 class="fTitle"> Subscribe <span>Us</span> </h4>
+            <div class="subscribe-form">
+              <form  method="POST" >
+                <input type="text" placeholder="Email Address" name='Email Address'><button type="submit" class="fill-btn" >SUBSCRIBE <i class="fa fa-telegram"></i></button>
+                </form>
+                </div>
+            </div>
+            {% if salert==true%}
+            <body onload="popUpr('{{message}}');">
+            {% endif %}
+            {%if dangeralert==true %}
+	        <body onload="dangerUp('{{message}}');">
+	        {% endif %}
+            <div class="social-icons">
+            <h4 class="fTitle"> Social <span>Media</span> </h4>
+            <ul>
+            <li>
+            <a href="https://www.facebook.com/sesciiti/" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
+            <li> <a href="https://twitter.com/sesciiti" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
+            <li><a href="https://in.linkedin.com/company/sesc-iiti" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+            <li><a href="https://www.instagram.com/ecell.iiti/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            <!-- footer Section Ends -->
+            <!-- copyright Section Begins -->
+            <section id="copyright" class="copyright">
+            <div class="container">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h6> Copyright ©E-Cell IIT Indore 2021| All Rights Reserved| Developed with ❤ by the team <a href="http://scanfcode.com" target="_blank"></a> </h6>
+            </div>
+            </div>
+            </div>
+            </section>
+            <script>
+                function popUpr(message){
+               swal("Congratulations!", "You have been subscribed to Entereprenuership Cell,IIT Indore!", "success");
+               }
+               function dangerUp(message){
+		      swal("Alert","Please enter your email address","warning");
+		       }
+    </script>
+              </script>
+        
+        
+
 </body>
 
-{% endblock content %}
+</html>

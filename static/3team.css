@@ -1,11 +1,177 @@
+.tittle{
+  text-align: center;
+  margin-top: 15px ;
+  font-size: 2em;
+ 
 
+
+}
+h1{
+  font-family: 'Droid Sans', sans-serif;
+}
+p{
+  font-family: serif;
+}
+hr{
+  border: dotted  #a9adad 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 150px auto 0 auto;
+}
+
+/* name of alumini above*/
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(8, 8, 8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: hsl(187, 86%, 53%);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*---nav bar above*/
+.container_type {
+  display: flex;
+  align-items: center;
+  background-image: url(/static/blurr\ team.png);
+ background-repeat: no-repeat;
+ background-size:100% 600px;   
+  width: 100%;
+  height: 400px;
+}
+ .typewriter {
+  font-family: sans-serif;
+  color: #fff;
+ justify-content: center;
+  display: block;
+ 
+  font-weight: bolder;
+ 
+}
+.typewriter-text {
+  padding-right: 10px;
+  color: rgb(29, 168, 223);
+  border-right: solid rgb(28, 166, 221) 7px;
+  text-transform: uppercase;
+  animation: cursor 1s ease-in-out infinite;
+  font-weight: bold;
+  justify-content: center;
+  
+}
+@keyframes cursor {
+  from { border-color: #ffe509; }
+  to { border-color: transparent; }
+}
+ @media (max-width: 767.98px) {
+  .typewriter { font-size: 35px; }
+}
+@media (min-width: 768px) {
+  .typewriter { font-size: 60px; }
+}
+
+
+
+
+
+
+
+
+/* ----timeline above */
+.teamnopic{
+  display: flex;
+ margin-top: 50px;
+ 
+ justify-content: center;
+}
+
+
+/*----*/
+  
+  .news-alerts {
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-family: "Archivo", sans-serif;
+  }
+  
+  .news-alerts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .news-alerts ul li {
+    padding: 10px 0px;
+  }
+  
+  .news-alerts ul li a {
+    color: rgb(4, 74, 114);
+    text-decoration: none;
+  }
+  
+  .news-alerts ul li a:hover {
+    color: rgb(3, 77, 119);
+    text-decoration: underline;
+  }
+  /*--------*/
 .twoinrow{
    margin-left:123px;
    margin-right:61px;
 }
 .text-center{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 0px;
 }
 
 
@@ -14,11 +180,11 @@
     margin-top: 100px;
     width: 200px;
     height: 240px;
-    background:#000;
+    background:rgb(2, 69, 100);
     position:relative
 }
 .box6:after{
-    background:rgba(0,0,0,.7);
+    background:rgba(2, 68, 99, 0.7);
     
     position:absolute;
     top:0;
@@ -34,7 +200,7 @@
     width:100%;
     height:100%;
     
-  filter: drop-shadow(0 0 0.75rem black);
+  filter: drop-shadow(0 0 0.75rem rgb(1, 60, 94));
 }
 .box6:hover img{
     opacity:.5;
@@ -96,11 +262,11 @@
     line-height:35px;
     background:#fff;
     font-size:18px;
-    color:#605f5f;
+    color:#32515f;
     margin-bottom:5px;
     transition:all .35s ease}
 .box6 .icon li a:hover{
-    background:#605f5f;
+    background:#32515f;
     color:#fff
 }
 

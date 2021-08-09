@@ -1,0 +1,122 @@
+
+{% extends "layout.html" %}
+{% block title %}Innovation and Projects{% endblock %}
+{%block content%}
+
+
+
+
+
+<div class="back animate__animated animate__flipInX" style="text-align:center;font-size:275%;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">INNOVATION AND PROJECTS<br>"Entreprenuers Innovate"</div>
+
+
+<div class="container" >
+<div class="container" style="width:device-width;position:absolute; top:250px;">
+<div class ="row">
+    <div class="column">
+    <div class="card">
+        <img src="{{url_for('static',filename='neom.jpg')}}" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title"><strong>Neom :A vision of a new future</strong></h5>
+          <h6 class="card-text">NEOM is a bold and audacious project in the northwest of Saudi Arabia. It is a project built around helping to solve some of the challenges facing the world today in the face of unchecked urban development and climate change. NEOM will be a destination and a home for people who want to be part of building a new model of sustainable ecosystems at a time when the world  needs fresh thinking and new solutions. NEOM is a central element of Saudi Arabia’s Vision 2030 which seeks to diversify the Saudi economy and reduce its dependency on hydrocarbons. </h6>
+          <a href="https://www.neom.com/en-us" target="_blank" class="btn btn-primary">Know more<span class="glyphicon glyphicon-road"></span></a>
+        </div>
+      </div>
+      </div>
+      <div class="column">
+      <div class="card ">
+        <img src="{{url_for('static',filename='wasteventures.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Waste Ventures</strong> </h5>
+          <h6 class="card-text">About
+            Waste Ventures India is a waste management social enterprise that is moving India's solid waste sector to models that are simultaneously environmentally and financially sustainable. They offer professional waste collection and processing services to households, corporate clients and waste pickers. Since late 2013, they have averted over 3,000 tons of waste from Indian dumpsites.</h6>
+          <a href="https://wasteventures.com/" target="_blank" class="btn btn-primary">Know more <span class="glyphicon glyphicon-road"></span></a>
+        </div>
+      </div>
+      </div>
+      <div class="column">
+        <div class="card ">
+          <img src="{{url_for('static',filename='greenventureslogo2.png')}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Green Ventures</strong> </h5>
+            <h6 class="card-text">"Green Ventures develop, facilitate and manage investments in renewable energy projects.It was founded by experts in the renewable energy sector. They are constantly driven by the technicality and the top quality of their projects. A unique basis that produces highly profitable projects.The founders have been involved in the development and construction of over 150 MWe operational solar parks built in several European countries and in different climatic conditions./h6>
+            <a href="https://web.archive.org/web/20200925000543/https://www.greenventuresinternational.com/" target="_blank" class="btn btn-primary">Know more <span class="glyphicon glyphicon-road"></span></a>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="row-2" >
+<div class=" shadow container-fluid " style="font-family:sans-serif;position:relative; top:10px;background-color: #f1f1f1;">
+  
+
+    <h3  style="text-align:center;color:royalblue; font-size: 275%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" ><strong>SHOW YOUR WORK</strong></h3>
+    <h4 >Have you come up with an idea?You’ve worked hard on it and want to transform your vision to an enterprise?</h4>
+    <h4>We at E-Cell are here to provide you with the opportunity to showcase your work to the world. </h4>
+    <h4>Submit your eccentric ideas or projects that you have worked on and you believe has the potential to bring about a profound change.</h4>
+    <h4 style="text-align:center;color:royalblue;"><i class="fa fa-trophy"></i>Best ones will be displayed above on the webpage<i class="fa fa-trophy"></i></h4>
+    
+        <form action ="/innovationandprojects" method="POST" enctype ="multipart/form-data">
+            <div class="form-group">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Name" name='Enter your Name'>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Email" name='Enter your Email'>
+              </div>    
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Project Title" name='Project Title'>
+              </div>    
+             
+                <div class="custom-file">
+                  <input oninput ="filesize(this);" type="file" class="custom-file-input" name="File" id="File">
+                  <label class="custom-file-label" for="File">Select file</label>
+                </div>
+              </div>
+      
+              <button type="submit" class="btn btn-primary">Upload</button>
+      
+        </form>
+        {% for msg in get_flashed_messages() %}
+        <div class="alert alert-warning" style="z-index: 1;">{{ msg }}</div>
+        {% endfor %}
+        {% if happyalert== true%}
+		     <body onload="proup('{{message}}');">
+		    {% endif %}
+        <h5><strong>Note:</strong>Submitted projects will be displayed on the webpage only the after approval from E-CELL,IITI </h5>
+</div>
+</div>
+<section id="copyright" class="copyright">
+  <div class="container">
+  
+  <div class="row-3">
+    <div class="footer-social-icon">
+      <span>Follow us</span>
+      <a href="#"><i class="facebookf  fa fa-facebook "></i></a>
+      <a href="#"><i class="twitterf fa fa-twitter"></i></a>
+      <a href="#"><i class="instagramf fa fa-instagram"></i></a>
+      <a href="#"><i class="linkedinf fa fa-linkedin"></i></a>
+    </div>
+  </div>
+  <div class="row-4">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h6> Copyright ©E-Cell IIT Indore 2021| All Rights Reserved| Developed with ❤ by the team <a href="http://scanfcode.com" target="_blank"></a> </h6>
+    </div>
+    </div>
+  </div>
+  </section>
+
+{% endblock content %}
+
+{% block script %}
+<script>
+  function proup(message){
+		swal("Congratulations!", "Your work has been submitted!", "success");
+	  }
+    
+
+  function filesize(elem){
+    document.cookie = `filesize=${elem.files[0].size}`
+  }
+
+</script>
+{% endblock script %}
